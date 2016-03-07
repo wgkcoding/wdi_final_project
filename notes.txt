@@ -1,0 +1,40 @@
+Angular OK ?
+Basic Page Layout
+User privileges
+Database requirements
+Password Encryption (Express bcrypt)
+
+
+
+Will
+---------
+* Admin Access:
+* Headshots, Photos, Articles/Headlines
+	Post, Search, Edit, Delete
+
+*! Twitter API --- figured out
+* Toronto Star - Webscraper that collects her stories?
+* Photo Gallery
+* Modals
+
+
+Jordan
+---------
+* DB : Breweries, Beers, Events, User, Admin
+
+
+* Layout
+Save Draft
+Facebook/Google Login?
+
+
+
+
+
+
+
+Resources:
+Twitter APi: https://dev.twitter.com/rest/reference/get/statuses/user_timeline
+	& OAuth: https://dev.twitter.com/oauth
+
+Anyone doing Option2 (building a CMS for a journal): here is a tutorial detailing how to build a CMS using Mongo, Express, Angular and Node (MEAN stack) including password encryption https://masteringmean.com/lessons/435-Building-a-CMS-on-the-MEAN-Stack
