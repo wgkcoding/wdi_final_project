@@ -10,7 +10,7 @@ angular
 			ctrl.breweries = [];
 			ctrl.update = {
 				name: "",
-				type: ""
+				address: ""
 			}
 
 			ctrl.getAll = getAll;

@@ -51,7 +51,7 @@ router.put('/:id', function(req, res) {
 	console.log("Update ID: " + identify);
 	var updateInfo = {
                 name: req.body.name,
-                type: req.body.type,
+                address: req.body.address,
     	};
     console.log(updateInfo);
     Brewery.update(query,updateInfo,{},function(err,brewery){
