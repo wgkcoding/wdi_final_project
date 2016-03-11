@@ -30,14 +30,17 @@
 <body ng-app='app'>
 
 	<div ui-view></div>
-	<a ui-sref="home">Home</a>
-	<a ui-sref="login">Login</a>
-	<a ui-sref="viewA">View A</a>
-	<a ui-sref="viewB">View B</a>
-	<a ui-sref="viewC">View C</a>
-	<a ui-sref="editPhoto">Edit Photo</a>
-	<a ui-sref="editStory">Edit Story</a>
-	<a ui-sref="editUser">Edit User</a>
+
+	<div class="debug-nav">
+		<a ui-sref="home">Home</a>
+		<a ui-sref="login">Login</a>
+		<a ui-sref="viewA">View Photos</a>
+		<a ui-sref="viewB">View Headlines</a>
+		<!-- <a ui-sref="viewC">View C</a> -->
+		<a ui-sref="editPhoto">Edit Photo</a>
+		<a ui-sref="editStory">Edit Story</a>
+		<a ui-sref="editUser">Edit User</a>
+	</div>
 
 </body>
 </html>
