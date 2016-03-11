@@ -1,16 +1,19 @@
 angular
 	.module('app')
-	.controller('editACtrl', editACtrl);
+	.controller('editStoryCtrl', editStoryCtrl);
 
-	function editACtrl(dbService) {
+	function editStoryCtrl(dbService) {
 		var ctrl = this;
 
-			ctrl.testMsg = "Login";
+			ctrl.testMsg = "Edit Story";
 			ctrl.dbService = dbService;
-			ctrl.users = [];
+			ctrl.stories = [];
 			ctrl.update = {
-				name: "",
-				email: ""
+					headline: "",
+					author: "",
+					createdate: "",
+					content: "",
+					image: "",
 			}
 
 			ctrl.getAll = getAll;
@@ -21,31 +24,31 @@ angular
 
 		function getAll(){
 			console.log("getAll");
-			var addr = '/api/users/allUsers';
+			var addr = '/api/stories/allStories';
 			dbService.getAll(addr).then(function(res){
 					ctrl.users = res;
 			});
 		};
 
 		function getOne(id){
-			var addr = '/api/users/';
+			var addr = '/api/stories/';
 			dbService.getOne(addr, id).then(function(res){
 					ctrl.users = [];
 					ctrl.users.push(res);
 			});
 		};
 
-		function post(newUser){
+		function post(newStory){
 			console.log("post");
-			var addr = '/api/users/newUser';
-			dbService.post(addr, newUser).then(function(res){
+			var addr = '/api/stories/newStory';
+			dbService.post(addr, newStory).then(function(res){
 				if (res) {ctrl.getAll()}
 			})
 		};
 
 		function put(id, update){
 			console.log('PUT request id: ' + id);
-			var addr = '/api/users/';
+			var addr = '/api/stories/';
 			dbService.put(addr, id, update).then(function(res){
 			if (res) ctrl.getAll();
 		});
@@ -53,7 +56,7 @@ angular
 
 		function del(id){
 			console.log("del");
-			var addr = '/api/users/';
+			var addr = '/api/stories/';
 			dbService.del(addr, id).then(function(res){
 			if (res) ctrl.getAll();
 		});

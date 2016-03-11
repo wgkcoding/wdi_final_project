@@ -30,19 +30,19 @@ angular
 				templateUrl:'/partials/viewC.html',
 				controller: 'viewCCtrl as ctrl'
 			})
-			.state('editA',{
-				url:'/editA',
-				templateUrl:'/partials/editA.html',
-				controller: 'editACtrl as ctrl'
+			.state('editStory',{
+				url:'/editStory',
+				templateUrl:'/partials/editStory.html',
+				controller: 'editStoryCtrl as ctrl'
 			})
-			.state('editB',{
-				url:'/editB',
-				templateUrl:'/partials/editB.html',
-				controller: 'editBCtrl as ctrl'
+			.state('editPhoto',{
+				url:'/editPhoto',
+				templateUrl:'/partials/editPhoto.html',
+				controller: 'editPhotoCtrl as ctrl'
 			})
-			.state('editC',{
-				url:'/editC',
-				templateUrl:'/partials/editC.html',
-				controller: 'editCCtrl as ctrl'
+			.state('editUser',{
+				url:'/editUser',
+				templateUrl:'/partials/editUser.html',
+				controller: 'editUserCtrl as ctrl'
 			})
 });

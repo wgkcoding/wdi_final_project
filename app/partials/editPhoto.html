@@ -1,15 +1,19 @@
 <head>
-	<title>Breweries</title>
+	<title>Photos</title>
 </head>
 
 <body>
 
 <div>
-	{{ctrl.breweries}}
+	{{ctrl.photos}}
 </div>
 
-<p>Name: <input type="text" ng-model="ctrl.update.name"></p>
-<p>Address: <input type="text" ng-model="ctrl.update.address"></p>
+<p>Owner: <input type="text" ng-model="ctrl.update.owner"></p>
+<p>Title: <input type="text" ng-model="ctrl.update.title"></p>
+<p>Date Uploaded: <input type="text" ng-model="ctrl.update.createdate"></p>
+<p>Location: <input type="text" ng-model="ctrl.update.location"></p>
+<p>Copyright: <input type="text" ng-model="ctrl.update.copyright"></p>
+
 
 <p>Id: <input type="text" ng-model="ctrl.chooseId"></p>
 

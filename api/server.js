@@ -23,15 +23,15 @@ db.once('open', function() {
 
 //MODELS
 var User = require('./models/Users');
-var Beer = require('./models/Beers');
-var Brewery = require('./models/Breweries');
+var Story = require('./models/Stories');
+var Photo = require('./models/Photos');
 
 //ROUTES
 var userRoutes = require('./routes/user_routes');
-var beerRoutes = require('./routes/beer_routes');
-var breweryRoutes = require('./routes/brewery_routes');
+var storyRoutes = require('./routes/story_routes');
+var photoRoutes = require('./routes/photo_routes');
 
 //ENDPOINTS
 app.use('/api/users' , userRoutes);
-app.use('/api/beers' , beerRoutes);
-app.use('/api/breweries' , breweryRoutes);
+app.use('/api/stories' , storyRoutes);
+app.use('/api/photos' , photoRoutes);

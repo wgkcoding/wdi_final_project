@@ -1,16 +1,19 @@
 angular
 	.module('app')
-	.controller('editBCtrl', editBCtrl);
+	.controller('editPhotoCtrl', editPhotoCtrl);
 
-	function editBCtrl(dbService) {
+	function editPhotoCtrl(dbService) {
 		var ctrl = this;
 
-			ctrl.testMsg = "Edit B";
+			ctrl.testMsg = "Edit Photo";
 			ctrl.dbService = dbService;
-			ctrl.beers = [];
+			ctrl.photos = [];
 			ctrl.update = {
-				name: "",
-				type: ""
+				owner: "", 
+				title: "", 
+				createdate: "",
+				location: "", 
+				copyright: ""
 			}
 
 			ctrl.getAll = getAll;
@@ -21,31 +24,31 @@ angular
 
 		function getAll(){
 			console.log("getAll");
-			var addr = '/api/beers/allBeers';
+			var addr = '/api/photos/allPhotos';
 			dbService.getAll(addr).then(function(res){
-					ctrl.beers = res;
+					ctrl.photos = res;
 			});
 		};
 
 		function getOne(id){
-			var addr = '/api/beers/';
+			var addr = '/api/photo/';
 			dbService.getOne(addr, id).then(function(res){
-					ctrl.beers = [];
-					ctrl.beers.push(res);
+					ctrl.photos = [];
+					ctrl.photos.push(res);
 			});
 		};
 
 		function post(newUser){
 			console.log("post");
-			var addr = '/api/beers/newBeer';
-			dbService.post(addr, newUser).then(function(res){
+			var addr = '/api/photos/newPhoto';
+			dbService.post(addr, newPhoto).then(function(res){
 				if (res) {ctrl.getAll()}
 			})
 		};
 
 		function put(id, update){
 			console.log('PUT request id: ' + id);
-			var addr = '/api/beers/';
+			var addr = '/api/photos/';
 			dbService.put(addr, id, update).then(function(res){
 			if (res) ctrl.getAll();
 		});
@@ -53,7 +56,7 @@ angular
 
 		function del(id){
 			console.log("del");
-			var addr = '/api/beers/';
+			var addr = '/api/photos/';
 			dbService.del(addr, id).then(function(res){
 			if (res) ctrl.getAll();
 		});
