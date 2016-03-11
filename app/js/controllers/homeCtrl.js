@@ -9,58 +9,28 @@ angular
 
 			ctrl.testMsg = "Home";
 			ctrl.dbService = dbService;
+			ctrl.myInterval = 3000;
+			ctrl.noWrapSlides = false;
+			ctrl.active = 0;
+
+			ctrl.slides = [
+			{image:"../assets/img/test_mara/mara_00.jpg",
+			id:0},
+			{image:"../assets/img/test_mara/mara_01.jpg",
+			id:1},
+			{image:"../assets/img/test_mara/mara_02.jpg",
+			id:2},
+			{image:"../assets/img/test_mara/mara_03.jpg",
+			id:3},
+			{image:"../assets/img/test_mara/mara_04.jpg",
+			id:4}
+						];
 
 			console.log(ctrl.testMsg);
-	}
+			console.log(ctrl.slides);
 
-	// $scope.slides = [
-	// 		{image: 'rsrcs/carosrc/Photos/mara_00.jpg', description: 'Image 00'},
-	// 		{image: 'rsrcs/carosrc/Photos/mara_01.jpg', description: 'Image 01'},
-	// 		{image: 'rsrcs/carosrc/Photos/mara_02.jpg', description: 'Image 02'},
-	// 		{image: 'rsrcs/carosrc/Photos/mara_03.jpg', description: 'Image 03'},
-	// 		{image: 'rsrcs/carosrc/Photos/mara_04.jpg', description: 'Image 04'},
-	// 	];
+	};	
 
-	// 	$scope.currentIndex = 0;
+			console.log(ctrl.testMsg);
 
-	// 	$scope.setCurrentSlideIndex = function (index) {
-	// 		$scope.currentIndex = index;
-	// 	};
-
-	// 	$scope.isCurrentSlideIndex = function (index) {
-	// 		return $scope.currentIndex === index;
-	// 	};
-
-	// 	$scope.prevSlide = function () {
-	// 		$scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
-	// 	}
-
-	// 	$scope.nextSlide = function () {
-	// 		$scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
-	// 	}
-	// })
-	// 	.animation('.slide-animation', function () {
-	// 		return {
-	// 			addClass: function (element, className, done) {
-	// 				if (className == 'ng-hide') {
-	// 					TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
-	// 					// ANIMATION CODE GOES HERE
-	// 				}
-	// 				else {
-	// 					done();
-	// 				}
-	// 			},
-	// 			removeClass: function (element, className, done) {
-	// 				if (className == 'ng-hide') {
-	// 					// ANIMATION CODE GOES HERE
-	// 					element.removeClass('ng-hide');
-
-	// 					TweenMax.set(element, { left: element.parent().width() });
-	// 					TweenMax.to(element, 0.5, {left: 0, onComplete: done });
-	// 				}
-	// 				else {
-	// 					done();
-	// 				}
-	// 			}
-	// 		};
-	// 	});
+	
