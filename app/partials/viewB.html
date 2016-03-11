@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-
 {{ctrl.testMsg}}
 
-	<div class="fullPageHide">
+	<!-- <div class="fullPageHide">
 		<img class="fullPage" src="./assets/img/frontPages/STAR_ONT_ON_2015-22-10_A1.jpg">
-	</div>
+	</div> -->
 
-</body>
-</html>
+	<uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
+	      <uib-slide ng-repeat="slide in ctrl.slides track by slide.id" index="slide.id">
+	     	<div class="header">
+			<h1 class="text-muted">Print</h1>
+			</div>
+	        <img ng-src="{{slide.image}}" style="margin:auto;">
+	        <!-- <div class="carousel-caption">
+	          <h4>Slide {{slide.id}}</h4>
+	        </div> -->
+	      </uib-slide>
+	</uib-carousel>
