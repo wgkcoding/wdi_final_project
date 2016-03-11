@@ -70,6 +70,7 @@
 						return err
 					})
 		};
+		
 		function login(payload) {
 			return $http.post('api/users/login', payload)
 				.then(function(res){

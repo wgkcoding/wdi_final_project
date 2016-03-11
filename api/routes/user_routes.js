@@ -5,12 +5,7 @@ var router       = express.Router();
 var User = require('./../models/Users');
 
 router.post('/login',function(req,res){
-    console.log('console endpoint');
-    console.log(req.body);
-    console.log(req.body.email);
-    console.log(req.body.password);
     var where = {email:req.body.email,password:req.body.password};
-    //{where: }
     User.find(where, function(err, User) {
         if (err) {
             console.log(err);
