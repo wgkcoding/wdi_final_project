@@ -1,6 +1,6 @@
 angular
 	.module('app',['ui.router'])
-	.config(function($stateProvider, $urlRouterProvider){
+	.config(function($stateProvider, $urlRouterProvider, $httpProvider){
 	
 		$urlRouterProvider.otherwise('/home');
 
@@ -45,4 +45,22 @@ angular
 				templateUrl:'/partials/editUser.html',
 				controller: 'editUserCtrl as ctrl'
 			})
+
+		$httpProvider .interceptors.push(function(){
+       return {
+           request: function(config) {
+               return config;
+           },
+           response: function(response) {
+               var auth_token = response.headers('authentication');
+               if(localStorage.authToken == undefined && auth_token != null){
+               	localStorage.authToken = auth_token;
+               }
+               return response;
+           }
+       }
+   });
 });
+
+
+
