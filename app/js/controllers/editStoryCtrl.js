@@ -26,15 +26,15 @@ angular
 			console.log("getAll");
 			var addr = '/api/stories/allStories';
 			dbService.getAll(addr).then(function(res){
-					ctrl.users = res;
+					ctrl.stories = res;
 			});
 		};
 
 		function getOne(id){
 			var addr = '/api/stories/';
 			dbService.getOne(addr, id).then(function(res){
-					ctrl.users = [];
-					ctrl.users.push(res);
+					ctrl.stories = [];
+					ctrl.stories.push(res);
 			});
 		};
 

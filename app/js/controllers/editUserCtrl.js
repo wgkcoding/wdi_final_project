@@ -23,7 +23,7 @@ angular
 			console.log("getAll");
 			var addr = '/api/users/allUsers';
 			dbService.getAll(addr).then(function(res){
-					ctrl.breweries = res;
+					ctrl.users = res;
 			});
 		};
 

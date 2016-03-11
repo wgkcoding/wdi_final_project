@@ -4,18 +4,18 @@ var jwt          = require('jsonwebtoken');
 var router       = express.Router();
 var User = require('./../models/Users');
 
-router.post('/login',function(req,res){
-    console.log('console endpoint')
-    var where = {where:{email:req.body.email,password:req.body.password}};
-    models.Users.find(where).then(function(user){
-        var user_obj = {email:user.email,id:user.id};
-        var token = jwt.sign(user_obj,'Fv1f3Y37S3RorBbT4PumpWVHejaEYnGs');
-            res.set('authentication',token);
-            res.json({
-                user:user
-            });
-    });
-});
+// router.post('/login',function(req,res){
+//     console.log('console endpoint')
+//     var where = {where:{email:req.body.email,password:req.body.password}};
+//     models.Users.find(where).then(function(user){
+//         var user_obj = {email:user.email,id:user.id};
+//         var token = jwt.sign(user_obj,'Fv1f3Y37S3RorBbT4PumpWVHejaEYnGs');
+//             res.set('authentication',token);
+//             res.json({
+//                 user:user
+//             });
+//     });
+// });
 
 router.get('/allUsers', function(req, res){
 	console.log(".find");
@@ -47,10 +47,10 @@ router.get('/:id', function(req, res){
 router.post('/newUser', function(req, res){
         console.log(".post");
         var newUser = User({
-        	// name: req.body.name,
         	email: req.body.email,
             password: req.body.password
         });
+        console.log(newUser);
         newUser.save(function (err){
             if (err) {
                 console.log(err)
@@ -66,7 +66,6 @@ router.put('/:id', function(req, res) {
     var query = { "_id": identify }
 	console.log("Update ID: " + identify);
 	var updateInfo = {
-                // name: req.body.name,
                 email: req.body.email,
                 password: req.body.password,
     	};

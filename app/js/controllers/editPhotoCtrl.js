@@ -31,14 +31,14 @@ angular
 		};
 
 		function getOne(id){
-			var addr = '/api/photo/';
+			var addr = '/api/photos/';
 			dbService.getOne(addr, id).then(function(res){
 					ctrl.photos = [];
 					ctrl.photos.push(res);
 			});
 		};
 
-		function post(newUser){
+		function post(newPhoto){
 			console.log("post");
 			var addr = '/api/photos/newPhoto';
 			dbService.post(addr, newPhoto).then(function(res){
