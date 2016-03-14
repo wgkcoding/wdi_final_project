@@ -6,46 +6,70 @@
 <body>
 
 	<!-- Header -->
-
-	<header class="top">
-		<div class="hdln">
-			<div class="hs"></div>
-				<div class="textBox">
-					<h1 class="name">
-						Alyshah Hasham
-					</h1>
-					<h2 class="descriptor">
-					Journalist | Toronto Star
-					</h2>
+<div class="container">
+		
+		<div class="row">
+			<header class="top" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="hdln">
+						<div class="row" class="textBox">
+							<div class="hs"></div>
+							<h1 class="name">
+								Alyshah Hasham
+							</h1>
+						</div>
+						<div class="row">
+							<h2 class="position">
+								Journalist
+							</h2>
+							<h2 class="employer">
+								Toronto Star
+							</h2>
+						</div>
 				</div>
-
+			</header>
 		</div>
-	</header>
 
 	<!-- Twitter -->
+	<div class="row">
+		<div class='twitter' class="col-xs-12 col-sm-6 col-md-12 col-lg-4">
+			<a class="twitter-timeline" href="https://twitter.com/alysanmati" data-widget-id="707577859032752128">Tweets by @alysanmati</a>
+		</div>
 
-	<a class="twitter-timeline" href="https://twitter.com/alysanmati" data-widget-id="707577859032752128">Tweets by @alysanmati</a>
+		<div class="pages" class="col-xs-12 col-sm-6 col-md-12 col-lg-4">
+		</div>
+
+		<div class"col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="starTouch"></div>
+		</div>
+	</div>
 
 	<!-- Front Page Images-->
-
-	<div class="portfolioPage">
-		<img class="pages" src="./assets/img/frontPages/STAR_ONT_ON_2015-22-10_A1.jpg">
-	</div>
+	<!-- <div class="row">
+		<div class="portfolio" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<img class="pages" src="./assets/img/frontPages/story-9.jpg">
+		</div>
+	</div> -->
 
 	<!-- Photo Gallery Slider-->
 
-	<div>
-		<uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
-		      <uib-slide ng-repeat="slide in ctrl.slides track by slide.id" index="slide.id">
-		      	<div class="header">
-				<h1 class="text-muted">Portfolio</h1>
-				</div>
-		        <img ng-src="{{slide.image}}" style="margin:auto;">
-		        <!-- <div class="carousel-caption">
-		          <h4>Slide {{slide.id}}</h4>
-		        </div> -->
-		      </uib-slide>
-		</uib-carousel>
+	<div class="row">
+		<div class="portfolio" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
+			      <uib-slide ng-repeat="slide in ctrl.slides track by slide.id" index="slide.id">
+			      	<div class="header">
+					<h1 class="text-muted">Portfolio</h1>
+					</div>
+			        <img ng-src="{{slide.image}}" style="margin:auto;">
+			        <!-- <div class="carousel-caption">
+			          <h4>Slide {{slide.id}}</h4>
+			        </div> -->
+			      </uib-slide>
+			</uib-carousel>
+		</div>
+
+		<!-- <div class"col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="starTouch"></div>
+		</div> -->
 	</div>
 
 	<!-- <div class="container slider">
@@ -60,9 +84,10 @@
 				</ul>
 		<button class="arrow prev" href="#" ng-click="nextSlide()">
 		<button class="arrow next" href="#" ng-click="prevSlide()"> -->
-			</div>
+		<!-- 	</div>
 		</nav>
-	</div>
+	</div> -->
+</div>
 
 </body>
 </html>

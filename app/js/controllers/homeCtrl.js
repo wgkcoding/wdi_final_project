@@ -24,13 +24,14 @@ angular
 			id:3},
 			{image:"../assets/img/test_mara/mara_04.jpg",
 			id:4}
-						];
+			];
 
 			console.log(ctrl.testMsg);
 			console.log(ctrl.slides);
 
-	};	
-
 			console.log(ctrl.testMsg);
 
+	};	
+
+		
 	

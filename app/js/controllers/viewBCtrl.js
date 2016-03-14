@@ -21,23 +21,20 @@ angular
 			{image:"../assets/img/frontPages/STAR_ONT_ON_2015-22-10_A1.jpg",
 			id:3},
 			{image:"../assets/img/frontPages/STAR_ONT_ON_2016-3-2_A1.jpg",
-			id:4}
+			id:4},
 			{image:"../assets/img/frontPages/STAR_ONT_ON_2016-26-1_A1.jpg",
-			id:5}
+			id:5},
 			{image:"../assets/img/frontPages/STAR_ONT_Replate_ON_2013-15-12_A1.jpg",
-			id:6}
+			id:6},
 			{image:"../assets/img/frontPages/STAR_ONT_Replate_ON_2015-5-12_A1.jpg",
-			id:7}
+			id:7},
 			{image:"../assets/img/frontPages/STAR_ONT_Replate_ON_2015-5-10_GT1.jpg",
-			id:8}
+			id:8},
 			{image:"../assets/img/frontPages/STAR_ONT_Replate_ON_2016-26-1_A4.jpg",
 			id:9}
 			];
 
 			console.log(ctrl.testMsg);
 			console.log(ctrl.slides);
-
-	};
-
 			console.log(ctrl.testMsg);
-	}
+	};
