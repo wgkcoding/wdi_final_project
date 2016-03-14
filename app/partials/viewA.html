@@ -1,18 +1,35 @@
+	<!--large carousel-->
+
 	<div class="container">
 		
-    	<!-- <div style="height :305px"> -->
-    	 <uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
-	      <uib-slide ng-repeat="slide in ctrl.slides track by slide.id" index="slide.id">
-	     	<div class="header">
-			<h1 class="text-muted">Portfolio</h1>
-			</div>
-	        <img ng-src="{{slide.image}}" style="margin:auto;">
-	        <!-- <div class="carousel-caption">
-	          <h4>Slide {{slide.id}}</h4>
-	        </div> -->
-	      </uib-slide>
-	    </uib-carousel>
-	 <!--   </div> -->
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	    	<div class="portBar"><h4>TITLE</h4></div>
+	    	<div class="imgTitle">IMAGE NAME</div>
+	    	<div class="portBox">
+		    	<!-- <div style="height :305px"> -->
+		    	 <uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
+			      <uib-slide ng-repeat="slide in ctrl.slides track by slide.id" index="slide.id">
+			     	<!-- <div class="header">
+					<h1 class="text-muted">Portfolio</h1>
+					</div> -->
+			        <img align="left" ng-src="{{slide.image}}" style="margin:auto;">
+			        <!-- <div class="carousel-caption">
+			          <h4>Slide {{slide.id}}</h4>
+			        </div> -->
+			        <div class="infoArea">
+			    	<h1>This Photo</h1>
+			    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			    	</div>
+			      </uib-slide>
 
-	</div>
+			    </uib-carousel>
+			    
+		  <!--</div> -->
+		  	</div>
+		</div>
 
