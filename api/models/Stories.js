@@ -10,11 +10,16 @@ var StorySchema = new Schema ({
 		type: String,
 		required: true
 	},
+	paper: {
+		type: String,
+	},
+	printed: { String,
+	},
 	createdate: {
-		type: String
+		type: String,
 	},
 	content: {
-		type: String
+		type: String,
 	},
 	image: {
 		type: String,

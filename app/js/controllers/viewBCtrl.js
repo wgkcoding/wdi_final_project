@@ -7,7 +7,7 @@ angular
 
 			ctrl.testMsg = "View B";
 			ctrl.dbService = dbService;
-			ctrl.myInterval = 3000;
+			ctrl.myInterval = 0;
 			ctrl.noWrapSlides = false;
 			ctrl.active = 0;
 
