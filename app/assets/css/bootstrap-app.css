@@ -1,5 +1,12 @@
 /* Large desktops and laptops */
 /*@media (min-width: 1201px) and (max-width: 1921px){*/
+	.top{
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
 
 	.hs{
 	float: left;
@@ -32,6 +39,12 @@
 		padding-right: 12vw;
 	}
 
+	.name{
+		float: right;
+		margin-top: 40px;
+		margin-right: 130px;
+	}
+
 	.employer{
 		float: right;
 		padding-right: 16vw;
@@ -46,8 +59,11 @@
 		margin-top: 0;
 		padding: 5px;
 		background-color: #55acee;
-		border-radius: 30px;
-		border: solid 20px #66757f;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
 	}
 
 	#twitter-widget-0{
@@ -64,8 +80,11 @@
 		background-attachment:;
 		background-repeat: no-repeat;
 		background-color: #55acee;
-		border-radius: 30px;
-		border: solid 20px #66757f;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
 	}
 
 	.portfolio{
@@ -73,10 +92,18 @@
 		margin-right: auto;
 		margin-left: auto;
 		margin-bottom: 30px;
-		width: 80vw;
+		width: 93vw;
 		margin-top: 30px;
-		border: solid 20px #000000;
-		border-radius: 26px;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-right: none;
+		border-left: none;
+		border-radius: 0;
+	}
+
+	.text-muted{
+		padding-top: 0;
+		margin-right: 88px;
 	}
 
 	img{
@@ -124,8 +151,9 @@
 		margin-bottom: 50px;
 	}
 	
-	.carousel{
-	
+	.carousel-inner{
+		width: 50%;
+		margin: 0;
 	}
 
 	.infoArea{
@@ -140,9 +168,8 @@
 
 	.storyArea{
 		display: inline-block;
-		float: none;
+		float: right;
 		margin-top: 130px;
-		display: inline-block;
 		width: 460px;
 		height: 400px;
 		border-left: solid 8px #000000;
@@ -180,6 +207,14 @@
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+
+	.top{
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
 
 	.hs{
 	float: left;
@@ -226,8 +261,11 @@
 		padding: 20px;
 		color: blue;
 		background-color: #55acee;
-		border-radius: 30px;
-		border: solid 20px #66757f;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
 	}
 
 	#twitter-widget-0{
@@ -244,8 +282,11 @@
 		background-attachment:;
 		background-repeat: no-repeat;
 		background-color: #55acee;
-		border-radius: 30px;
-		border: solid 20px #66757f;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
 	}
 
 	.portfolio{
@@ -254,8 +295,17 @@
 		margin-left: auto;
 		width: 100vw;
 		margin-top: 2vh;
-		border: solid 20px #000000;
-		border-radius: 26px;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-right: none;
+		border-left: none;
+		border-radius: 0;
+		margin-bottom: 50px;
+	}
+
+	.text-muted{
+		padding-top: 0;
+		margin-right: 88px;
 	}
 
 	img{
@@ -271,8 +321,11 @@
 		width: 50%;
 		height: 150px;
 		margin-top: 2vh;
-		border: solid 15px #000000;
-		border-radius: 20px;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
 		background-image: url(../graphic/st-logo.png);
 		background-size: cover;
 		background-position: 0px -100px;
@@ -304,14 +357,14 @@
 		border-top: solid 16px #000000;
 		border-bottom: solid 16px #000000;
 	}
-	
-	.carousel{
-	
+
+	.lgStory{
+		float: left;
 	}
 
 	.infoArea{
 		display: inline-block;
-		float: right;
+		float: none;
 		width: 20vw;
 		border-left: solid 12px #000000;
 	}
@@ -397,6 +450,7 @@
 	}
 
 	img{
+		top: -100px;
 		padding: 4px;
 		border: solid 20px #000000;
 		border-radius: 26px;
@@ -411,6 +465,28 @@
 		border-radius: 20px;
 		background-image: url(../graphic/st-logo.png);
 		background-size: cover;
+	}
+
+	.portBox{
+		overflow: hidden;
+	}
+
+	.carousel-inner{
+		height: 300px;
+	}
+
+	.lgStory{
+		float: none;
+		margin-right: auto;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.storyArea{
+		float: none;
+		width: 50vw;
+		margin-left: 12vw;
+		margin-top: 0;
 	}
 }
 
@@ -494,44 +570,83 @@
 		background-image: url(../grphc/st-logo.png);
 		background-size: cover;
 	}
+
+		.portBox{
+		overflow: hidden;
+	}
+
+	.carousel-inner{
+		height: 300px;
+	}
+
+	.lgStory{
+		float: none;
+		margin-right: auto;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.storyArea{
+		float: none;
+		width: 50vw;
+		margin-left: 12vw;
+		margin-top: 0;
+	}
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 
+	.top{
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+
 	.hs{
 	float: bottom-left;
 	display: inline-block;
 	position: relative;
-	width: 100px;
-	height: 100px;
+	width: 75px;
+	height: 75px;
 	border: solid 4px #000000; 
 	border-radius: 50%;
 	padding: 0;
-	margin-left: 30px;
+	margin-left: 62px;
 	margin-right: auto;
-	margin-top: 24px;
+	margin-top: 20px;
 	margin-bottom: 24px;
 	background-image: url(../headshot/ash_01.jpg);
-	background-size: 140px;
+	background-size: 106px;
 	background-position: -20px;
 	}
 	
 	h1{
 		float: right;
-		padding-top: 36px;
-		padding-right:6vw;
+		margin-top: 64px;
+		margin-right: 0px;
+		padding-top: 0px;
+		padding-right:0px;
+		padding-left: 0px;
 	}
 
 	h2{
 		float: right;
-		/*padding-left: .75em;*/
-		padding-right:6vw;
+		margin-right: 66px;
+		padding:0;
+	}
+
+	.name{
+		float: right;
+		margin-top: 40px;
+		margin-right: 64px;
 	}
 
 	.employer{
 		float: left;
-		padding-left: 6vw;
+		padding-left: 72px;
 		padding-bottom: 2vh;
 		padding-right: 0;
 	}
@@ -540,8 +655,13 @@
 		float: none;
 		margin: auto;
 		width: 80vw;
-		height: 660px;
+		height: 646px;
 		padding: 10px;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
 	}
 
 	.pages{
@@ -551,6 +671,11 @@
 		margin-right: auto;
 		width: 80vw;
 		height:460px;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
 		background-image: url(../img/frontPages/story-9.jpg);
 		background-size: cover;
 		background-position: 0% -130px;
@@ -564,8 +689,18 @@
 		margin-left: auto;
 		margin-right: auto;
 		width: 90vw;
-		border: solid 16px #66757f;
-		border-radius: 16px;
+		/*border: solid 16px #66757f;
+		border-radius: 16px;*/
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
+	}
+
+	.text-muted{
+		padding-top: 0;
+		margin-right: 88px;
 	}
 
 	img{
@@ -581,16 +716,97 @@
 	.starTouch{
 		float: none;
 		margin-top: 30px;
-		margin-bottom: 50px;
+		margin-bottom: 0px;
 		margin-left: auto;
 		margin-right: auto;
 		width: 50vw;
 		height: 250px;
-		border: solid 15px #000000;
-		border-radius: 20px;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
 		background-image: url(../graphic/st-logo.png);
 		background-size: cover;
+		background-position: -20px, 0px;
 	}
 
+	.portBar{
+		margin-top: 50px;
+		text-align: center;
+		color: #ffffff;
+		width: 100%;
+		height: 66px;
+		background-color: #000000;
+	}
 
+	h4{
+		font-size: 4vh;
+		position: relative;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+
+	.imgTitle{
+		text-align: center;
+		font-size: 4vh;
+		padding: 10px;
+	}
+
+	.portBox{
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		margin-bottom: 50px;
+	}
+	
+	.carousel{
+	
+	}
+
+	.infoArea{
+		margin-top: 64px;
+		padding: 5px;
+		text-align: center;
+		display: inline-block;
+		width: 250px;
+		height: 400px;
+		border-left: solid 8px #000000;
+	}
+
+	.storyArea{
+		display: inline-block;
+		float: none;
+		margin-top: 130px;
+		width: 460px;
+		height: 400px;
+		border-left: solid 8px #000000;
+	}
+
+	.lgStory{
+		float: left;
+		padding-left: 140px;
+		width: 40vw;
+	}
+
+	.hLine{
+		padding-right: 100px;
+		padding-left: 100px;
+	}
+
+	.textStory{
+		padding-left: 30px;
+	}
+
+	h3{
+		float: center;
+		margin-top: 0;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 0;
+		padding-bottom: 0; 
+	}
+
+	p{
+		padding-left: 16px;
+	}
 }
