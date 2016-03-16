@@ -1,8 +1,8 @@
 angular
 	.module('app')
-	.controller('viewBCtrl', viewBCtrl);
+	.controller('storyCtrl', storyCtrl);
 
-	function viewBCtrl(dbService) {
+	function storyCtrl(dbService) {
 		var ctrl = this;
 
 			ctrl.testMsg = "View B";

@@ -18,7 +18,7 @@ angular
 			.state('photos',{
 				url:'/photos',
 				templateUrl:'/partials/photos.html',
-				controller: 'viewACtrl as ctrl',
+				controller: 'photosCtrl as ctrl',
 				resolve: {
 					photos: function(dbService) {
 						return dbService.getAll('/api/photos/allPhotos').then(function(res){
@@ -27,10 +27,10 @@ angular
 					}
 				}
 			})
-			.state('viewB',{
-				url:'/viewB',
-				templateUrl:'/partials/viewB.html',
-				controller: 'viewBCtrl as ctrl'
+			.state('story',{
+				url:'/story',
+				templateUrl:'/partials/stories.html',
+				controller: 'storyCtrl as ctrl'
 			})
 			.state('viewC',{
 				url:'/viewC',
