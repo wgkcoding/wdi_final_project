@@ -43,11 +43,15 @@ angular
 				console.log(res);
 				localStorage.loginEmail = ctrl.email;
 				ctrl.auth_btn = res.data.msg;
+				ctrl.testMsg = "Logged In!"
 			})
 		}
 
 		function logOut(){
 			localStorage.clear();
+			ctrl.testMsg = "Logged Out";
+			ctrl.register_btn = "Sign Up";
+			ctrl.auth_btn = 'Login';
 		}
 
 	}

@@ -20,13 +20,27 @@ router.post('/register',function(req,res){
 		    		console.log("Hashing");
 		    	}, function(err, hash) {
 		       		// Store hash in your password DB. 
+		       		console.log("Hashed!");
 		        	__user.password = hash;
-		        	Users.create(__user)
-		        	.then(function(user){
-		        		//remove password from response
-		        		delete user.password;
-		        		res.json({user:user,msg:'Account Created'});
+		        	var newUser = Users({
+            			email: __user.email,
+        				password: __user.password});
+		        	console.log(newUser);
+		        	newUser.save(function(err){
+		        		if(err){
+		        			console.log(err);
+		        			res.json({user:null,msg:'Cant create user'});
+		        		}
+		        		else{
+		        			delete user.password;
+		        			res.json({user:user,msg:'Account Created'});
+		        		}
 		        	})
+		        	// .then(function(user){
+		        	// 	//remove password from response
+		        	// 	delete user.password;
+		        	// 	res.json({user:user,msg:'Account Created'});
+		        	// })
 		    	});
 			});
 		}else{
@@ -40,8 +54,8 @@ router.post('/authenticate',function(req,res){
 	console.log('Authentication Endpoint');
 	var __user = req.body;
 	var where = {email:__user.email};
-	console.log(where);
 	Users.findOne(where, function(err, user) {
+		console.log(user);
         if (err) {
             console.log(err);
             res.json({status:400,err:err});
@@ -50,11 +64,13 @@ router.post('/authenticate',function(req,res){
 			bcrypt.compare(__user.password, user.password, function(err, valid) {
 			    if(valid){
 			    	//remove password from response
+			    	console.log('valid');
 			    	delete user.password;
 			    	//set web token
 			    	var user_obj = {email:user.email};
 			    	var token = jwt.sign(user_obj,'randomsalt');
 					res.set('authentication',token);
+					console.log(token);
 			    	res.json({user:user,msg:'Authenticated'});
 			    } else {
 			    	res.json({user:null,msg:'Email/Password is incorrect'})
