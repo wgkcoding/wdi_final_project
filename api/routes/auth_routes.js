@@ -10,10 +10,8 @@ router.post('/register',function(req,res){
 	var __user = req.body;
 	//check if user is already registered
 	var where = {where:{email:__user.email}};
-	console.log(where);
 	Users.findOne(where)
 	.then(function(user){
-		console.log(user);
 		if(!user){
 			//user does not exist
 			//encrypt password

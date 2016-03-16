@@ -10,11 +10,13 @@ angular
 			ctrl.dbService = dbService;
 			ctrl.photos = [];
 			ctrl.update = {
+				image: "",
 				owner: "", 
 				title: "", 
 				createdate: "",
 				location: "", 
-				copyright: ""
+				copyright: "",
+				description: ""
 			}
 
 			ctrl.getAll = getAll;

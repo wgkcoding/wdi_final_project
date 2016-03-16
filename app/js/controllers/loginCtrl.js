@@ -15,7 +15,6 @@ angular
 			};
 
 			ctrl.auth_btn = 'Login';
-			// ctrl.login = login;
 
 			ctrl.register_btn = "Sign Up";
 			ctrl.register = register;

@@ -10,21 +10,16 @@ angular
 			ctrl.myInterval = 3000;
 			ctrl.noWrapSlides = false;
 			ctrl.active = 0;
+			ctrl.getAll = getAll;
 
-			ctrl.slides = [
-			{image:"../assets/img/test_mara/mara_00.jpg",
-			id:0, name:"Image 1"},
-			{image:"../assets/img/test_mara/mara_01.jpg",
-			id:1, name:"Image 2"},
-			{image:"../assets/img/test_mara/mara_02.jpg",
-			id:2, name:"Image 3"},
-			{image:"../assets/img/test_mara/mara_03.jpg",
-			id:3, name:"Image 4"},
-			{image:"../assets/img/test_mara/mara_04.jpg",
-			id:4, name:"Image 5"}
-			];
+			getAll();
 
-			console.log(ctrl.testMsg);
-			console.log(ctrl.slides);
+		function getAll(){
+				var addr = '/api/photos/allPhotos';
+				ctrl.dbService.getAll(addr).then(function(res){
+					ctrl.slides = res;
+					console.log(ctrl.slides);
+				});
+		};
 
 	};

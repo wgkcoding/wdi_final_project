@@ -4,7 +4,6 @@ var bodyParser = require('body-parser');
 var authentication = require("./middleware/auth");
 var app = express();
 
-
 app.use(express.static(__dirname + './../app'));
 app.use(bodyParser());
 app.use(bodyParser.urlencoded({extended:false}));
