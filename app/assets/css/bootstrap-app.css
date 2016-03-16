@@ -283,6 +283,71 @@
 		background-color: #000000;
 		border-style: none;
 	}
+
+	.shell{
+		width: 100%;
+		height: 100%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		padding: 30px;
+	}
+
+	.journalist{
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 30px;
+		width: 80%;
+		height: 0px;
+	}
+
+	input{
+		padding-top: 6px;
+		padding-bottom: 6px;
+		padding-left: 2px;
+		padding-right: 2px;
+		margin: 30px;
+	}
+
+	textarea{
+		padding: 30px;
+		margin: 30px;
+	}
+
+	.logout{
+		color: #ffffff;
+	}
+
+	button.ng-binding{
+		margin: 20px;
+		padding: 5px;
+		color: #ffffff;
+	}
+
+	.jLogin{
+		float: none;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.liStatus{
+		float: none;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+
+	.signIn{
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		padding: 20px;
+		text-align: center;
+		letter-spacing: 2px;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+	}
 /*}*/
 
 

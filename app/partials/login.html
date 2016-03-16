@@ -4,21 +4,23 @@
 </head>
 <body>
 
+	<div class="container">
+		<div class="signIn" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1 class="jLogin">Journalist login</h1>
 
-	
-	<h1>Journalist login</h1>
+			<h2 class="liStatus">{{ctrl.testMsg}}</h2>
 
-	<h2>{{ctrl.testMsg}}</h2>
-
-	<section class="form shell">
-		<form class="journalist">
-			Email: <input ng-model="ctrl.user.email" type="email" name="email" placeholder="Email"><br>
-			Password: <input ng-model="ctrl.user.password" type="text" name="password" placeholder="password"><br>
-			Re-enter Password: <input ng-model="ctrl.repassword" type="text" name="password" placeholder="password"><br>
-			<button ng-click="ctrl.authenticate(ctrl.user)" type="submit">{{ctrl.auth_btn}}</button><br>
-			<button ng-click="ctrl.register(ctrl.user)" type="submit">{{ctrl.register_btn}}</button>
-			<button ng-click="ctrl.logOut()" type="submit">Logout</button>
-		</form>
-	</section>
+			<section class="form shell">
+				<form class="journalist">
+					Email: <input ng-model="ctrl.user.email" type="email" name="email" placeholder="Email">
+					Password: <input ng-model="ctrl.user.password" type="text" name="password" placeholder="password">
+					Re-enter Password: <input ng-model="ctrl.repassword" type="text" name="password" placeholder="password"><br>
+					<button ng-click="ctrl.authenticate(ctrl.user)" type="submit">{{ctrl.auth_btn}}</button>
+					<button ng-click="ctrl.register(ctrl.user)" type="submit">{{ctrl.register_btn}}</button>
+					<button class="logout" ng-click="ctrl.logOut()" type="submit">Logout</button>
+				</form>
+			</section>
+		</div>
+	</div>
 
 </body>

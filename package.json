@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "angular-jwt": "0.0.9",
+    "bcrypt": "^0.8.5",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.0",
+    "crypto": "0.0.3",
     "express": "^4.13.4",
     "jqlite": "^0.2.34",
     "jsonwebtoken": "^5.7.0",
