@@ -8,16 +8,20 @@
 		margin-bottom: 30px;
 	}
 
+	.hdln{
+		text-align: center;	
+	}
+
 	.hs{
-	float: left;
-	display: inline-block;
+	float: none;
+	display: block;
 	position: relative;
 	width: 200px;
 	height: 200px;
 	border: solid 4px #000000; 
 	border-radius: 50%;
 	padding: 0;
-	margin-left: 12vw;
+	margin-left: auto;
 	margin-right: auto;
 	margin-top: 24px;
 	margin-bottom: 24px;
@@ -50,26 +54,43 @@
 	h1{
 		float: right;
 		padding-top: 50px;
-		padding-left: 6vw;
-		padding-right: 12vw;
+		padding-left: 30px;
+		padding-right: 60px;
 	}
 
 	h2{
 		float: left;
-		padding-left: 14vw;
-		padding-right: 12vw;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.name{
-		float: right;
-		margin-top: 120px;
-		margin-right: 154px;
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 120px;
+		letter-spacing: 4px;
+		font-family: 'Roboto Slab', serif;
 	}
 
 	.employer{
 		float: right;
-		padding-right: 16vw;
-		padding-bottom: 50px;
+		margin-bottom: 20px;
+		padding-right: 164px;
+		padding-bottom: 0px;
+		color: #000000;
+		font-size: 40px;
+		letter-spacing: 4px;
+		font-family: 'Roboto Slab', serif;
+	}
+
+	.position{
+		margin-bottom: 20px;
+		padding-left: 162px;
+		font-size: 40px;
+		letter-spacing: 4px;
+		font-family: 'Roboto Slab', serif;
 	}
 
 	.twitter{
@@ -165,7 +186,10 @@
 		transform: translate(0, -50%);
 	}
 
-	a{
+	/*nav buttons*/
+	button a{
+		color: #ffffff;
+		letter-spacing: 4px;
 		font-family: 'Roboto Slab', serif;
 	}
 
@@ -177,7 +201,7 @@
 	}
 
 	.imgTitle{
-		padding: 10px;
+		padding-top: 50px;
 		text-align: center;
 		font-size: 26px;
 		font-family: 'Roboto Slab', serif;
@@ -191,8 +215,8 @@
 	
 	.carousel-inner{
 		width: 40%;
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 
 	.paperCut{
@@ -233,7 +257,7 @@
 
 	.lgStory{
 		float: left;
-		padding-left: 140px;
+		padding-left: 110px;
 		width: 50%;
 	}
 
@@ -280,6 +304,10 @@
 
 	.theFoot{
 		padding: 0px;
+	}
+
+	.header{
+
 	}
 
 	footer{
@@ -351,6 +379,12 @@
 	button.ng-binding{
 		margin: 20px;
 		color: #ffffff;
+	}
+
+	button{
+		color: #ffffff;
+		padding-left: 60px;
+		padding-right:60px;
 	}
 
 	.jLogin{

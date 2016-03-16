@@ -17,28 +17,28 @@
 							<h2 class="position">
 								Journalist
 							</h2>
-							<a href="http://www.thestar.com/authors.hasham_alyshah.html">
+							<!-- <a href="http://www.thestar.com/authors.hasham_alyshah.html"> -->
 								<h2 class="employer">
 								Toronto Star
 								</h2>
-							</a>
+							<!-- </a> -->
 						</div>
 						<footer class="theFoot">
-							<div class="footNav">
-								<button>
-									<a ui-sref="home">Home</a>
-								</button>
-								<button>
-									<a ui-sref="login">Login</a>
-								</button>
-								<button>
-									<a ui-sref="viewA">Photography</a>
-								</button>
-								<button>
-									<a ui-sref="viewB">Headlines</a>
-								</button>
-							</div>
-						</footer>
+		<div class="footNav">
+			<button>
+				<a ui-sref="home">Home</a>
+			</button>
+			<button>
+				<a ui-sref="viewB">Headlines</a>
+			</button>
+			<button>
+				<a ui-sref="viewA">Photography</a>
+			</button>
+			<button>
+				<a ui-sref="login">Login</a>
+			</button>
+		</div>
+	</footer>
 				</div>
 			</header>
 		</div>
@@ -64,7 +64,7 @@
 			<uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
 			      <uib-slide ng-repeat="slide in ctrl.slides track by slide.id" index="slide.id">
 			      	<div class="header">
-					<h1 class="text-muted">Photo Portfolio</h1>
+					<!-- <h1 class="text-muted">Photo Portfolio</h1> -->
 					</div>
 			        <img class="img-responsive" ng-src="{{slide.image}}" style="margin:auto;">
 			        <!-- <div class="carousel-caption">
