@@ -12,9 +12,9 @@
 
 			<section class="form shell">
 				<form class="journalist">
-					Email: <input ng-model="ctrl.user.email" type="email" name="email" placeholder="Email">
-					Password: <input ng-model="ctrl.user.password" type="text" name="password" placeholder="password">
-					Re-enter Password: <input ng-model="ctrl.repassword" type="text" name="password" placeholder="password"><br>
+					Email:<input ng-model="ctrl.user.email" type="email" name="email" placeholder="Email">
+					Password:<input ng-model="ctrl.user.password" type="text" name="password" placeholder="password">
+					Re-enter Password:<input ng-model="ctrl.repassword" type="text" name="password" placeholder="password">
 					<button ng-click="ctrl.authenticate(ctrl.user)" type="submit">{{ctrl.auth_btn}}</button>
 					<button ng-click="ctrl.register(ctrl.user)" type="submit">{{ctrl.register_btn}}</button>
 					<button class="logout" ng-click="ctrl.logOut()" type="submit">Logout</button>
@@ -22,5 +22,22 @@
 			</section>
 		</div>
 	</div>
+
+	<footer class="theFoot">
+		<div class="footNav">
+			<button>
+				<a ui-sref="home">Home</a>
+			</button>
+			<button>
+				<a ui-sref="login">Login</a>
+			</button>
+			<button>
+				<a ui-sref="viewA">Photography</a>
+			</button>
+			<button>
+				<a ui-sref="viewB">Headlines</a>
+			</button>
+		</div>
+	</footer>
 
 </body>

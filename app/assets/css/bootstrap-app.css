@@ -27,7 +27,7 @@
 	z-index: 1;
 	}
 
-	.admin{
+	/*.admin{
 		display: block;
 		z-index: 2;
 		text-align: center;
@@ -45,7 +45,7 @@
 
 	.hs:hover + .admin{
 		visibility: visible;
-	}
+	}*/
 
 	h1{
 		float: right;
@@ -146,15 +146,19 @@
 
 	.portBar{
 		margin-top: 50px;
-		text-align: center;
-		color: #ffffff;
 		width: 100%;
 		height: 66px;
 		background-color: #000000;
+		text-align: center;
+		letter-spacing: 4px;
+		color: #ffffff;
+	}
+
+	.portType{
+		font-size: 26px;
 	}
 
 	h4{
-		font-size: 4vh;
 		position: relative;
 		top: 50%;
 		transform: translate(0, -50%);
@@ -233,6 +237,16 @@
 		padding-right: 100px;
 	}
 
+	.imgTitle{
+		padding-right: 92px;
+	}
+
+	.imgInfo{
+		margin-left: 10px;
+		padding-left: 40px;
+		padding-right: 100px;
+	}
+
 	h1{
 		float: center;
 		margin-top: 0;
@@ -266,9 +280,9 @@
 
 	.footNav{
 		margin-right: 0;
-		margin-left: -16px;
+		margin-left: 0px;
 		text-align: center;
-		width: 1170px;
+		width: 100%;
 		background-color: #000000;
 	}
 
@@ -320,7 +334,6 @@
 
 	button.ng-binding{
 		margin: 20px;
-		padding: 5px;
 		color: #ffffff;
 	}
 

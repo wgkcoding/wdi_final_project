@@ -3,8 +3,8 @@
 	<div class="container">
 		
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-	    	<div class="portBar"><h4>ALYSHAH HASHAM</h4></div>
-	    	<div class="imgTitle">IMAGE NAME</div>
+	    	<div class="portBar"><h4 class="portType">ALYSHAH HASHAM | PHOTOGRAPHY</h4></div>
+	    	<div class="imgTitle"></div>
 	    	<div class="portBox">
 		    	<!-- <div style="height :305px"> -->
 		    	 <uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
@@ -18,9 +18,9 @@
 			        </div> -->
 			        <div class="infoArea">
 			        
-				    	<h1>{{slide.name}}</h1>
+				    	<h1 class="imgTitle">{{slide.name}}</h1>
 
-				    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				    	<p class="imgInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -34,5 +34,21 @@
 			    
 		  <!--</div> -->
 		  	</div>
+		  	<footer class="theFoot">
+				<div class="footNav">
+					<button>
+						<a ui-sref="home">Home</a>
+					</button>
+					<button>
+						<a ui-sref="login">Login</a>
+					</button>
+					<button>
+						<a ui-sref="viewA">Photography</a>
+					</button>
+					<button>
+						<a ui-sref="viewB">Headlines</a>
+					</button>
+				</div>
+			</footer>
 		</div>
 
