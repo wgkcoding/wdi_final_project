@@ -1,13 +1,14 @@
+<html>
 <body>
-
-	<!-- Header -->
+<!-- Header -->
 <div class="container">
 		
 		<div class="row">
 			<header class="top" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="hdln">
 						<div class="row" class="textBox">
-							<div class="hs"></div>
+							<div onmouseover="adminMouseOver" class="hs"></div>
+							<div class="admin"><p>edit</p></div>
 							<h1 class="name">
 								Alyshah Hasham
 							</h1>
@@ -16,9 +17,11 @@
 							<h2 class="position">
 								Journalist
 							</h2>
-							<h2 class="employer">
+							<a href="http://www.thestar.com/authors.hasham_alyshah.html">
+								<h2 class="employer">
 								Toronto Star
-							</h2>
+								</h2>
+							</a>
 						</div>
 				</div>
 			</header>
@@ -34,16 +37,9 @@
 		</div>
 
 		<div class"col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<div class="starTouch"></div>
+			 <a href="http://startouch.thestar.com/#news"> <div class="starTouch"></div></a>
 		</div>
 	</div>
-
-	<!-- Front Page Images-->
-	<!-- <div class="row">
-		<div class="portfolio" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<img class="pages" src="./assets/img/frontPages/story-9.jpg">
-		</div>
-	</div> -->
 
 	<!-- Photo Gallery Slider-->
 
@@ -67,21 +63,22 @@
 		</div> -->
 	</div>
 
-	<!-- <div class="container slider">
-			<img ng-repeat="slide in slides" class="slide slide-animation" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
-
-		<nav class="nav">
-			<div class="wrapper">
-				<ul class="dots">
-					<li class="dot" ng-repeat="slide in slides">
-						<a href="#" ng-class="{'active':isCurrentSlideIndex($index)}"
-								ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
-				</ul>
-		<button class="arrow prev" href="#" ng-click="nextSlide()">
-		<button class="arrow next" href="#" ng-click="prevSlide()"> -->
-		<!-- 	</div>
-		</nav>
-	</div> -->
+	<footer class="theFoot">
+		<div class="footNav">
+			<button>
+				<a ui-sref="home">Home</a>
+			</button>
+			<button>
+				<a href="bio">Bio</a>
+			</button>
+			<button>
+				<a ui-sref="viewA">Photography</a>
+			</button>
+			<button>
+				<a ui-sref="viewB">Headlines</a>
+			</button>
+		</div>
+	</footer>
 </div>
 
 </body>

@@ -18,6 +18,9 @@ var PhotoSchema = new Schema ({
 	},
 	copyright: {
 		type: String,
+	},
+	description: {
+		type: String,
 	}
 });
 
