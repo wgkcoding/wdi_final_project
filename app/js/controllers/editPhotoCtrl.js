@@ -2,8 +2,9 @@ angular
 	.module('app')
 	.controller('editPhotoCtrl', editPhotoCtrl);
 
-	function editPhotoCtrl(dbService) {
+	function editPhotoCtrl(dbService, $state) {
 		var ctrl = this;
+		if (localStorage.authToken === undefined) {$state.go('login')};
 
 			ctrl.testMsg = "Edit Photo";
 			ctrl.dbService = dbService;
