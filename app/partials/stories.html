@@ -6,20 +6,15 @@
 		<div class="imgTitle">STORY TITLE</div>
 		<div class="storyBox" class="row">
 			<uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
-				<uib-slide ng-repeat="slide in ctrl.slides track by slide.id" index="slide.id">
+				<uib-slide ng-repeat="story in ctrl.stories track by slide._id" index="$index">
 				    <div class="header"><!-- <h1 class="text-muted">Print</h1>--></div>
 				     	<div class="paperCut">
-					        <img class="lgStory" ng-src="{{slide.image}}" style="margin:auto;">
+					        <img class="lgStory" ng-src="{{story.image}}" style="margin:auto;">
 						       	<div class="carousel-caption"></div>
 						          <!-- <h4>Slide {{slide.id}}</h4> -->
 							        <div class="storyArea">
-								    	<h3 class="hLine">This Headline</h3>
-								    	<p class="textStory">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								    	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								    	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								    	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								    	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								    	<h3 class="hLine">{{story.headline}}</h3>
+								    	<p class="textStory">{{story.content}}</p>
 							    	</div>
 						    	</div>
 				</uib-slide>

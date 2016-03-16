@@ -8,7 +8,14 @@ angular
 			.state('home',{
 				url:'/home',
 				templateUrl:'/partials/home.html',
-				controller: 'homeCtrl as ctrl'
+				controller: 'homeCtrl as ctrl',
+				resolve: {
+					photos: function(dbService) {
+						return dbService.getAll('/api/photos/allPhotos').then(function(res){
+							return res;
+						});
+					}
+				}
 			})
 			.state('login',{
 				url:'/login',
@@ -30,7 +37,14 @@ angular
 			.state('story',{
 				url:'/story',
 				templateUrl:'/partials/stories.html',
-				controller: 'storyCtrl as ctrl'
+				controller: 'storyCtrl as ctrl',
+				resolve: {
+					stories: function(dbService) {
+						return dbService.getAll('/api/stories/allStories').then(function(res){
+							return res;
+						});
+					}
+				}
 			})
 			.state('viewC',{
 				url:'/viewC',
