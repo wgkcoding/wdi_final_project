@@ -2,8 +2,8 @@
 <div class="container">
 
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<div class="portBar"><h4>FROM THE HEADLINES</h4></div>
-		<div class="imgTitle">STORY TITLE</div>
+		<div class="portBar"><h4 class="portType">ALYSHAH HASHAM | ARTICLES</h4></div>
+		<div class="imgTitle"></div>
 		<div class="storyBox" class="row">
 			<uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
 				<uib-slide ng-repeat="slide in ctrl.slides track by slide.id" index="slide.id">
@@ -25,5 +25,21 @@
 				</uib-slide>
 			</uib-carousel>
 		</div>
+		<footer class="theFoot">
+				<div class="footNav">
+					<button>
+						<a ui-sref="home">Home</a>
+					</button>
+					<button>
+						<a ui-sref="login">Login</a>
+					</button>
+					<button>
+						<a ui-sref="viewA">Photography</a>
+					</button>
+					<button>
+						<a ui-sref="viewB">Headlines</a>
+					</button>
+				</div>
+			</footer>
 	</div>
 </div>
