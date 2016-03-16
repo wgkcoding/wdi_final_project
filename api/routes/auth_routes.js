@@ -9,7 +9,7 @@ router.post('/register',function(req,res){
 	console.log('Registration Endpoint');
 	var __user = req.body;
 	//check if user is already registered
-	var where = {where:{email:__user.email}};
+	var where = {email:__user.email};
 	Users.findOne(where)
 	.then(function(user){
 		if(!user){

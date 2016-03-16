@@ -7,20 +7,20 @@
 	    	<div class="imgTitle">IMAGE NAME</div>
 	    	<div class="portBox">
 		    	<!-- <div style="height :305px"> -->
-		    	 <uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
-			      <uib-slide ng-repeat="slide in ctrl.slides track by slide._id" index="slide._id">
+		    	 <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+			      <uib-slide ng-repeat="photo in photos track by photo._id" index="photo._id">
 			     	<!-- <div class="header">
 					<h1 class="text-muted">Portfolio</h1>
 					</div> -->
-			        <img align="left" ng-src="{{slide.image}}" style="margin:auto">
+			        <img align="left" ng-src="{{photo.image}}" style="margin:auto">
 			        <!-- <div class="carousel-caption">
 			          <h4>Slide {{slide.id}}</h4>
 			        </div> -->
 			        <div class="infoArea">
 			        
-				    	<h1>{{slide.name}}</h1>
+				    	<h1>{{photo.name}}</h1>
 
-				    	<p>{{slide.description}}</p>
+				    	<p>{{photo.description}}</p>
 
 			    	</div>
 			      </uib-slide>

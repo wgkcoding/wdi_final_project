@@ -15,10 +15,17 @@ angular
 				templateUrl:'/partials/login.html',
 				controller: 'loginCtrl as ctrl'
 			})
-			.state('viewA',{
-				url:'/viewA',
-				templateUrl:'/partials/viewA.html',
-				controller: 'viewACtrl as ctrl'
+			.state('photos',{
+				url:'/photos',
+				templateUrl:'/partials/photos.html',
+				controller: 'viewACtrl as ctrl',
+				resolve: {
+					photos: function(dbService) {
+						return dbService.getAll('/api/photos/allPhotos').then(function(res){
+							return res;
+						});
+					}
+				}
 			})
 			.state('viewB',{
 				url:'/viewB',
