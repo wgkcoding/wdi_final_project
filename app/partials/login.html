@@ -14,9 +14,9 @@
 			<section class="form shell">
 				<form class="journalist">
 					<div class="row">
-						Email:<input ng-model="ctrl.user.email" type="email" name="email" placeholder="Email">
-						Password:<input ng-model="ctrl.user.password" type="text" name="password" placeholder="password">
-						Re-enter Password:<input ng-model="ctrl.repassword" type="text" name="password" placeholder="password">
+						<input ng-model="ctrl.user.email" type="email" name="email" placeholder="Email">
+						<input ng-model="ctrl.user.password" type="text" name="password" placeholder="password">
+						<input ng-model="ctrl.repassword" type="text" name="password" placeholder="password">
 					</div>
 					<div class="row">
 						<button ng-click="ctrl.authenticate(ctrl.user)" type="submit">{{ctrl.auth_btn}}</button>

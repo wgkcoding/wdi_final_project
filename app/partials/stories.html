@@ -2,11 +2,11 @@
 <div class="container">
 
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-		<div class="portBar"><h4>FROM THE HEADLINES</h4></div>
-		<div class="imgTitle">STORY TITLE</div>
+		<div class="portBar"><h4>ALYSHAH HASHAM  ARTICLES</h4></div>
+		<div class="imgTitle"></div>
 		<div class="storyBox" class="row">
 			<uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
-				<uib-slide ng-repeat="story in ctrl.stories track by slide._id" index="$index">
+				<uib-slide ng-repeat="story in ctrl.stories track by story._id" index="$index">
 				    <div class="header"><!-- <h1 class="text-muted">Print</h1>--></div>
 				     	<div class="paperCut">
 					        <img class="lgStory" ng-src="{{story.image}}" style="margin:auto;">
@@ -22,3 +22,19 @@
 		</div>
 	</div>
 </div>
+	<footer class="theFoot">
+		<div class="footNav">
+			<button>
+				<a ui-sref="home">Home</a>
+			</button>
+			<button>
+				<a ui-sref="story">Headlines</a>
+			</button>
+			<button>
+				<a ui-sref="photos">Photography</a>
+			</button>
+			<button>
+				<a ui-sref="login">Login</a>
+			</button>
+		</div>
+	</footer>

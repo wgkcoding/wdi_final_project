@@ -1,5 +1,9 @@
 /* Large desktops and laptops */
 /*@media (min-width: 1201px) and (max-width: 1921px){*/
+	body.ng-scope{
+		color: #000000;
+	}
+
 	.top{
 		border-top: solid 12px #000000;
 		border-bottom: solid 12px #000000;
@@ -31,31 +35,11 @@
 	z-index: 1;
 	}
 
-	/*.admin{
-		display: block;
-		z-index: 2;
-		text-align: center;
-		position: relative;
-		left: 170px;
-		top: 46px;
-		visibility: hidden;
-		width: 160px;
-		height: 160px;
-		border-radius: 50%;
-		font-family: helvetica;
-		color: #ffffff;
-		background-color: rgba(0,0,0,0.6);
-	}
-
-	.hs:hover + .admin{
-		visibility: visible;
-	}*/
-
 	h1{
 		float: right;
-		padding-top: 50px;
-		padding-left: 30px;
-		padding-right: 60px;
+		padding-top: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 	h2{
@@ -69,6 +53,7 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+		color: #000000;
 		font-size: 120px;
 		letter-spacing: 4px;
 		font-family: 'Roboto Slab', serif;
@@ -77,7 +62,7 @@
 	.employer{
 		float: right;
 		margin-bottom: 20px;
-		padding-right: 164px;
+		padding-right: 140px;
 		padding-bottom: 0px;
 		color: #000000;
 		font-size: 40px;
@@ -87,7 +72,8 @@
 
 	.position{
 		margin-bottom: 20px;
-		padding-left: 162px;
+		padding-left: 140px;
+		color: #000000;
 		font-size: 40px;
 		letter-spacing: 4px;
 		font-family: 'Roboto Slab', serif;
@@ -171,6 +157,7 @@
 		height: 66px;
 		background-color: #000000;
 		text-align: center;
+		font-size: 26px;
 		letter-spacing: 4px;
 		color: #ffffff;
 	}
@@ -193,6 +180,10 @@
 		font-family: 'Roboto Slab', serif;
 	}
 
+	.imgOpt{
+		color:#ffffff;
+	}
+
 	.imgName{
 		font-size: 26px;
 		letter-spacing: 2px;
@@ -203,6 +194,7 @@
 	.imgTitle{
 		padding-top: 50px;
 		text-align: center;
+		color: #000000;
 		font-size: 26px;
 		font-family: 'Roboto Slab', serif;
 	}
@@ -252,7 +244,7 @@
 		margin-top: 24px;
 		width: 540px;
 		height: 400px;
-		border-left: solid 8px #000000;
+		border-left: none 8px #000000;
 	}
 
 	.lgStory{
@@ -297,29 +289,31 @@
 	}
 
 	p{
+		color: #000000;
 		padding-left: 16px;
 		padding-right: 120px;
 		overflow: scroll;
 	}
 
 	.theFoot{
+		width: 100%;
 		padding: 0px;
 	}
 
-	.header{
+	/*.header{
 
-	}
+	}*/
 
 	footer{
-		float: left;
+		float: none;
 		padding-right: 0px;
 		padding-left: 0px;
 		padding-top: 0px;
 		padding-bottom: 0px;
-		margin-right: 0px;
-		margin-left: 0px;
+		margin-right: auto;
+		margin-left: auto;
 		margin-bottom: 75px;
-		width: 100%;
+		width:100%;
 	}
 
 	.footNav{
@@ -328,6 +322,10 @@
 		text-align: center;
 		width: 100%;
 		background-color: #000000;
+	}
+
+	footer .theFoot .ng-scope{
+		width: 100%;
 	}
 
 	footer, button{
@@ -345,8 +343,8 @@
 	.shell{
 		width: 100%;
 		height: 100%;
-		margin-top: 50px;
-		margin-bottom: 50px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		padding: 30px;
 	}
 
@@ -360,6 +358,7 @@
 	}
 
 	input{
+		color: #000000;
 		padding-top: 6px;
 		padding-bottom: 6px;
 		padding-left: 2px;
@@ -387,13 +386,24 @@
 		padding-right:60px;
 	}
 
+	.photoButtons{
+		text-align: center;
+	}
+
+	.photoFields{
+		text-align: center;
+		width: 100%;
+	}
+
 	.jLogin{
+		color: #000000;
 		float: none;
 		padding-right: 0px;
 		padding-left: 0px;
 	}
 
 	.liStatus{
+		color: #000000;
 		float: none;
 		padding-right: 0px;
 		padding-left: 0px;
@@ -405,11 +415,20 @@
 		margin-left: auto;
 		margin-top: 50px;
 		margin-bottom: 50px;
-		padding: 20px;
+		padding-bottom: 30px;
 		text-align: center;
 		letter-spacing: 2px;
 		border-top: solid 12px #000000;
 		border-bottom: solid 12px #000000;
+	}
+
+	.theFoot, .editAccess{
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}
+
+	.row{
+		width: 100%;
 	}
 /*}*/
 
@@ -426,7 +445,7 @@
 	}
 
 	.hs{
-	float: left;
+	float: none;
 	clear: right;
 	display: inline-block;
 	position: relative;
@@ -435,9 +454,9 @@
 	border: solid 4px #000000; 
 	border-radius: 50%;
 	padding: 0;
-	margin-left: 9em;
+	margin-left: auto;
 	margin-right: auto;
-	margin-top: 4em;
+	margin-top: 30px;
 	margin-bottom: 24px;
 	background-image: url(../headshot/ash_01.jpg);
 	background-size: 200px;
@@ -445,22 +464,50 @@
 	}
 	
 	h1{
-		float: right;
-		padding-top: 2.6em;
-		padding-left: 5em;
-		padding-right: 4em;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	h2{
-		float: left;
-		padding-left: 4em;
-		padding-right: 2em;
+		float: none;
+		margin-left: auto;
+		margin-right:auto;
+		padding-top: 0;
+		padding-bottom: 0; 
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.name{
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding:0;
+		color: #000000;
+		font-size: 120px;
+		letter-spacing: 4px;
+		font-family: 'Roboto Slab', serif;
+	}
+
+	.position{
+		padding-left: 0;
+		float: none;
+		margin-left: auto; 
+		margin-right: auto;
 	}
 
 	.employer{
-		float: right;
-		padding-right: 5em;
-		padding-bottom: 2em;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 0;
+		padding-bottom: 0;
 	}
 
 	.twitter{
@@ -487,7 +534,7 @@
 		height: 500px;
 		background-image: url(../img/frontPages/story-9.jpg);
 		background-size: cover;
-		background-position: 3px -176px;
+		background-position: 0px -192px;
 		background-attachment:;
 		background-repeat: no-repeat;
 		background-color: #55acee;
@@ -583,7 +630,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
 	
 	.hs{
-	float: bottom-left;
+	float: none;
 	display: inline-block;
 	position: relative;
 	width: 100px;
@@ -591,7 +638,7 @@
 	border: solid 4px #000000; 
 	border-radius: 50%;
 	padding: 0;
-	margin-left: 14vw;
+	margin-left: auto;
 	margin-right: auto;
 	margin-top: 24px;
 	margin-bottom: 24px;
@@ -601,26 +648,33 @@
 	}
 
 	h1{
-		float: right;
-		padding-top: 30px;
+		float: none;
+		padding-top: 0;
 		padding-left: 0;
-		padding-right: vw;
+		padding-right: 0;
 	}
 
 	h2{
-		float: right;
-		padding-right: 12vw;
-		/*padding-right: 16vw;*/
+		float: none;
+		padding-right:;
 	}
 
 	.employer{
 		float: left;
-		padding-left: 16vw;
+		margin-left: -2vw;
+		margin-right: 0;
+		padding-left: 0;
 		padding-bottom: 2vh;
-		padding-right: 0;
 	}
 
-	.pages{
+	.position{
+		padding-left: 0;
+		float: none;
+		margin-left: auto; 
+		margin-right: auto;
+	}
+
+	/*.pages{
 		float: right;
 		margin-right: 2vw;
 		margin-left: auto; 
@@ -635,9 +689,45 @@
 		background-color: #55acee;
 		border-radius: 30px;
 		border: solid 20px #66757f;
+	}*/
+	.twitter{
+		float: none;
+		width: 580;
+		height: 636px;
+		color: blue;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right:auto;
+		padding: 5px;
+		background-color: #55acee;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
 	}
 
-	.twitter{
+	.pages{
+		float: none;
+		width: 580px;
+		height: 636px;
+		margin-top: 30px;
+		margin-left: auto; 
+		margin-right:auto;
+		background-image: url(../img/frontPages/story-9.jpg);
+		background-size: cover;
+		background-position: 0px -210px;
+		background-attachment:;
+		background-repeat: no-repeat;
+		background-color: #55acee;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
+	}
+
+	/*.twitter{
 		float: left;
 		margin-left: 2vw;
 		width: 40vw;
@@ -647,15 +737,30 @@
 		background-color: #55acee;
 		border-radius: 30px;
 		border: solid 20px #66757f;
-	}
+	}*/
 
-	.portfolio{
+	/*.portfolio{
 		float: left;
 		margin-left: 2vw;
 		width: 50vw;
 		margin-top: 2vh;
 		border: solid 20px #000000;
 		border-radius: 26px;
+	}*/
+
+	.portfolio{
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 30px;
+		width: 100%;
+		height: 400px;
+		margin-top: 30px;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-right: none;
+		border-left: none;
+		border-radius: 0;
 	}
 
 	img{
@@ -666,12 +771,15 @@
 	}
 
 	.starTouch{
-		float: right;
-		margin-right: 2vw;
+		float: none;
+		margin-top: 30px;
+		margin-bottom:0;
+		margin-right: auto;
+		margin-left: auto;
 		width: 312px;
 		height: 250px;
-		border: solid 15px #000000;
-		border-radius: 20px;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
 		background-image: url(../graphic/st-logo.png);
 		background-size: cover;
 	}
@@ -703,7 +811,7 @@
 @media (max-width: 767px) {
 
 	.hs{
-	float: bottom-left;
+	float: none;
 	display: inline-block;
 	position: relative;
 	width: 100px;
@@ -711,7 +819,7 @@
 	border: solid 4px #000000; 
 	border-radius: 50%;
 	padding: 0;
-	margin-left: 20vw;
+	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
 	margin-bottom: 24px;
@@ -738,6 +846,13 @@
 		padding-bottom: 2vh;
 	}
 
+	.position{
+		padding-left: 0;
+		float: none;
+		margin-left: auto; 
+		margin-right: auto;
+	}
+
 	.twitter{
 		float: none;
 		margin-right: auto;
@@ -747,22 +862,39 @@
 	}
 
 	.pages{
-		float: right;
-		width: 40vw;
-		height:40vh;
+		float: none;
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80vw;
+		height:460px;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
 		background-image: url(../img/frontPages/story-9.jpg);
 		background-size: cover;
-		background-position: 0% -210px;
+		background-position: 0% -130px;
 		background-attachment:;
 		background-repeat: no-repeat;
-	}
+	}	
 
 	.portfolio{
-		float: left;
-		width: 40vw;
-		margin-top: 2vh;
+		float: none;
+		width: 100%;
+		margin-top: 30px;
 		/*border: solid 20px #000000;
 		border-radius: 26px;*/
+	}
+
+	.employer{
+		float: none;
+		padding-left: 0;
+		padding-bottom: 2vh;
+		padding-right: 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	img{
@@ -771,16 +903,34 @@
 		border-radius: 26px;
 	}
 
-	.starTouch{
+	/*.starTouch{
 		width: 312px;
 		height: 250px;
 		border: solid 15px #000000;
 		border-radius: 20px;
 		background-image: url(../grphc/st-logo.png);
 		background-size: cover;
+	}*/
+
+	.starTouch{
+		float: none;
+		margin-top: 30px;
+		margin-bottom: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50vw;
+		height: 250px;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
+		background-image: url(../graphic/st-logo.png);
+		background-size: cover;
+		background-position: -20px, 0px;
 	}
 
-		.portBox{
+	.portBox{
 		overflow: hidden;
 	}
 
@@ -815,7 +965,7 @@
 	}
 
 	.hs{
-	float: bottom-left;
+	float: none;
 	display: inline-block;
 	position: relative;
 	width: 75px;
@@ -823,7 +973,7 @@
 	border: solid 4px #000000; 
 	border-radius: 50%;
 	padding: 0;
-	margin-left: 62px;
+	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
 	margin-bottom: 24px;
@@ -848,16 +998,27 @@
 	}
 
 	.name{
-		float: right;
+		float: none;
 		margin-top: 40px;
-		margin-right: 64px;
+		margin-right: auto;
+		margin-left: auto;
+		font-size: 60px;
 	}
 
 	.employer{
-		float: left;
-		padding-left: 72px;
+		float: none;
+		padding-left: 0;
 		padding-bottom: 2vh;
 		padding-right: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.position{
+		padding-left: 0;
+		float: none;
+		margin-left: auto; 
+		margin-right: auto;
 	}
 
 	.twitter{
@@ -893,13 +1054,12 @@
 	}
 
 	.portfolio{
-		margin-top: 30px;
 		float: none;
+		margin-top: 30px;
 		margin-left: auto;
 		margin-right: auto;
-		width: 90vw;
-		/*border: solid 16px #66757f;
-		border-radius: 16px;*/
+		width: 100%;
+		height: 100%;
 		border-right: none;
 		border-left: none;
 		border-top: solid 12px #000000;
@@ -920,6 +1080,12 @@
 
 	.img-responsive{
 		width: 100%;
+		height: 100%;
+	}
+
+	.carousel-indicator{
+		width: 0;
+		height: 0;
 	}
 
 	.starTouch{
@@ -1017,5 +1183,9 @@
 
 	p{
 		padding-left: 16px;
+	}
+
+	.formShell{
+
 	}
 }
