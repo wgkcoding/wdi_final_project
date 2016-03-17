@@ -32,11 +32,13 @@ router.get('/:id', function(req, res){
 router.post('/newPhoto', function(req, res){
         console.log(".post");
         var newPhoto = Photo({
+            image: req.body.image,
         	owner: req.body.owner, 
             title: req.body.title, 
             createdate: req.body.date,
             location: req.body.location, 
-            copyright: req.body.copyright
+            copyright: req.body.copyright,
+            description: req.body.description
         });
         newPhoto.save(function (err){
             if (err) {
@@ -53,11 +55,13 @@ router.put('/:id', function(req, res) {
     var query = { "_id": identify }
 	console.log("Update ID: " + identify);
 	var updateInfo = {
+            image: req.body.image,
             owner: req.body.owner, 
             title: req.body.title, 
             createdate: req.body.date,
             location: req.body.location, 
-            copyright: req.body.copyright
+            copyright: req.body.copyright,
+            description: req.body.description
     	};
     console.log(updateInfo);
     Photo.update(query,updateInfo,{},function(err,photo){

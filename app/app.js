@@ -8,22 +8,43 @@ angular
 			.state('home',{
 				url:'/home',
 				templateUrl:'/partials/home.html',
-				controller: 'homeCtrl as ctrl'
+				controller: 'homeCtrl as ctrl',
+				resolve: {
+					photos: function(dbService) {
+						return dbService.getAll('/api/photos/allPhotos').then(function(res){
+							return res;
+						});
+					}
+				}
 			})
 			.state('login',{
 				url:'/login',
 				templateUrl:'/partials/login.html',
 				controller: 'loginCtrl as ctrl'
 			})
-			.state('viewA',{
-				url:'/viewA',
-				templateUrl:'/partials/viewA.html',
-				controller: 'viewACtrl as ctrl'
+			.state('photos',{
+				url:'/photos',
+				templateUrl:'/partials/photos.html',
+				controller: 'photosCtrl as ctrl',
+				resolve: {
+					photos: function(dbService) {
+						return dbService.getAll('/api/photos/allPhotos').then(function(res){
+							return res;
+						});
+					}
+				}
 			})
-			.state('viewB',{
-				url:'/viewB',
-				templateUrl:'/partials/viewB.html',
-				controller: 'viewBCtrl as ctrl'
+			.state('story',{
+				url:'/story',
+				templateUrl:'/partials/stories.html',
+				controller: 'storyCtrl as ctrl',
+				resolve: {
+					stories: function(dbService) {
+						return dbService.getAll('/api/stories/allStories').then(function(res){
+							return res;
+						});
+					}
+				}
 			})
 			.state('viewC',{
 				url:'/viewC',

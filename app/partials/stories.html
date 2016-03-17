@@ -1,0 +1,24 @@
+<!--Stories-->
+<div class="container">
+
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="portBar"><h4>FROM THE HEADLINES</h4></div>
+		<div class="imgTitle">STORY TITLE</div>
+		<div class="storyBox" class="row">
+			<uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
+				<uib-slide ng-repeat="story in ctrl.stories track by slide._id" index="$index">
+				    <div class="header"><!-- <h1 class="text-muted">Print</h1>--></div>
+				     	<div class="paperCut">
+					        <img class="lgStory" ng-src="{{story.image}}" style="margin:auto;">
+						       	<div class="carousel-caption"></div>
+						          <!-- <h4>Slide {{slide.id}}</h4> -->
+							        <div class="storyArea">
+								    	<h3 class="hLine">{{story.headline}}</h3>
+								    	<p class="textStory">{{story.content}}</p>
+							    	</div>
+						    	</div>
+				</uib-slide>
+			</uib-carousel>
+		</div>
+	</div>
+</div>

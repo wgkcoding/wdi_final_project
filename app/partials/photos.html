@@ -1,0 +1,30 @@
+	<!--large carousel-->
+
+	<div class="container">
+		
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	    	<div class="portBar"><h4>ALYSHAH HASHAM</h4></div>
+	    	<div class="imgTitle">IMAGE NAME</div>
+	    	<div class="portBox">
+
+		    	<uib-carousel active="ctrl.active" interval="ctrl.myInterval" no-wrap="ctrl.noWrapSlides">
+      			<uib-slide ng-repeat="photo in ctrl.photos track by photo._id" index="$index">
+
+			        <img align="left" ng-src="{{photo.image}}" style="margin:auto">
+			    
+			        <div class="infoArea">
+			        
+				    	<h1>{{photo.name}}</h1>
+
+				    	<p>{{photo.description}}</p>
+
+			    	</div>
+
+			      </uib-slide>
+
+			    </uib-carousel>
+			    
+		  		</div> 
+		  	</div>
+		</div>
+

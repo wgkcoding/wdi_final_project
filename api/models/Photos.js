@@ -2,6 +2,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var PhotoSchema = new Schema ({
+	image: {
+		type: String,
+	},
 	owner: {
 		type: String,
 	},
