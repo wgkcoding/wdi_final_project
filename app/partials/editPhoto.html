@@ -5,34 +5,48 @@
 <body>
 	
 <section class="container">
-	<div>
-		{{ctrl.photos}}
-	</div>
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="row">
+			{{ctrl.photos}}
+		</div>
 
-	<p>Owner: <input type="text" ng-model="ctrl.update.owner"></p>
-	<p>Title: <input type="text" ng-model="ctrl.update.title"></p>
-	<p>Date Uploaded: <input type="text" ng-model="ctrl.update.createdate"></p>
-	<p>Location: <input type="text" ng-model="ctrl.update.location"></p>
-	<p>Copyright: <input type="text" ng-model="ctrl.update.copyright"></p>
+		<div class="row">
+			<p>Image: <input type="text" ng-model="ctrl.update.image"></p>
+			<p>Owner: <input type="text" ng-model="ctrl.update.owner"></p>
+			<p>Title: <input type="text" ng-model="ctrl.update.title"></p>
+			<p>Date Uploaded: <input type="text" ng-model="ctrl.update.createdate"></p>
+			<p>Location: <input type="text" ng-model="ctrl.update.location"></p>
+			<p>Copyright: <input type="text" ng-model="ctrl.update.copyright"></p>
+			<p>Description: <input type="text" ng-model="ctrl.update.description"></p>
 
-<<<<<<< HEAD
-=======
-<p>Image: <input type="text" ng-model="ctrl.update.image"></p>
-<p>Owner: <input type="text" ng-model="ctrl.update.owner"></p>
-<p>Title: <input type="text" ng-model="ctrl.update.title"></p>
-<p>Date Uploaded: <input type="text" ng-model="ctrl.update.createdate"></p>
-<p>Location: <input type="text" ng-model="ctrl.update.location"></p>
-<p>Copyright: <input type="text" ng-model="ctrl.update.copyright"></p>
-<p>Description: <input type="text" ng-model="ctrl.update.description"></p>
->>>>>>> 2b84a9129ef288b321bafe4593bece4054d7fcf5
+			<p>Id: <input type="text" ng-model="ctrl.chooseId"></p>
+		</div>
 
-	<p>Id: <input type="text" ng-model="ctrl.chooseId"></p>
+		<div class="row">
+			<button ng-click="ctrl.getAll()">Get All</button>
+			<button ng-click="ctrl.getOne(ctrl.chooseId)">Get One</button>
+			<button ng-click="ctrl.post(ctrl.update)">Post</button>
+			<button ng-click="ctrl.put(ctrl.chooseId, ctrl.update)">Put</button>
+			<button ng-click="ctrl.del(ctrl.chooseId)">Delete</button>
+		</div>
 
-	<button ng-click="ctrl.getAll()">Get All</button>
-	<button ng-click="ctrl.getOne(ctrl.chooseId)">Get One</button>
-	<button ng-click="ctrl.post(ctrl.update)">Post</button>
-	<button ng-click="ctrl.put(ctrl.chooseId, ctrl.update)">Put</button>
-	<button ng-click="ctrl.del(ctrl.chooseId)">Delete</button>
+		<footer class="theFoot editAccess">
+			<div class="footNav">
+				<button>
+					<a ui-sref="home">Home</a>
+				</button>
+				<button>
+					<a ui-sref="editPhoto">Edit Photo</a>
+				</button>
+				<button>
+					<a ui-sref="editStory">Edit Story</a>
+				</button>
+				<button>
+					<a ui-sref="editUser">Edit User</a>
+				</button>
+			</div>
+		</footer>
+	</div>	
 </section>
 
 </body>

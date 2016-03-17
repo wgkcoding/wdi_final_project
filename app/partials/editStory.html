@@ -1,28 +1,51 @@
-<!DOCTYPE html>
-<html>
 <head>
 	<title>Stories</title>
 </head>
 <body>
 
-<div>
-	{{ctrl.stories}}
-</div>
+		<div class="container">
+			<div class="signIn" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="row">
+					<div>
+						{{ctrl.stories}}
+					</div>
+			</div>
 
-<p>Headline: <input type="text" ng-model="ctrl.update.headline"></p>
-<p>Author: <input type="text" ng-model="ctrl.update.author"></p>
-<p>Date: <input type="text" ng-model="ctrl.update.createdate"></p>
-<p>Content: <input type="text" ng-model="ctrl.update.content"></p>
-<p>Image: <input type="text" ng-model="ctrl.update.image"></p>
+			<div class="row">
+				<p>Headline: <input type="text" ng-model="ctrl.update.headline"></p>
+				<p>Author: <input type="text" ng-model="ctrl.update.author"></p>
+				<p>Date: <input type="text" ng-model="ctrl.update.createdate"></p>
+				<p>Content: <input type="text" ng-model="ctrl.update.content"></p>
+				<p>Image: <input type="text" ng-model="ctrl.update.image"></p>
+			
+				<p>Id: <input type="text" ng-model="ctrl.chooseId"></p>
+			</div>
 
+			<div class="row">
+				<button ng-click="ctrl.getAll()">Get All</button>
+				<button ng-click="ctrl.getOne(ctrl.chooseId)">Get One</button>
+				<button ng-click="ctrl.post(ctrl.update)">Post</button>
+				<button ng-click="ctrl.put(ctrl.chooseId, ctrl.update)">Put</button>
+				<button ng-click="ctrl.del(ctrl.chooseId)">Delete</button>
+			</div>
 
-<p>Id: <input type="text" ng-model="ctrl.chooseId"></p>
-
-<button ng-click="ctrl.getAll()">Get All</button>
-<button ng-click="ctrl.getOne(ctrl.chooseId)">Get One</button>
-<button ng-click="ctrl.post(ctrl.update)">Post</button>
-<button ng-click="ctrl.put(ctrl.chooseId, ctrl.update)">Put</button>
-<button ng-click="ctrl.del(ctrl.chooseId)">Delete</button>
+			<footer class="theFoot editAccess">
+				<div class="footNav">
+					<button>
+						<a ui-sref="home">Home</a>
+					</button>
+					<button>
+						<a ui-sref="editPhoto">Edit Photo</a>
+					</button>
+					<button>
+						<a ui-sref="editStory">Edit Story</a>
+					</button>
+					<button>
+						<a ui-sref="editUser">Edit User</a>
+					</button>
+				</div>
+			</footer>
+		</div>
 
 </body>
 </html>
