@@ -1,8 +1,17 @@
 /* Large desktops and laptops */
-/*@media (min-width: 1201px) and (max-width: 1921px){*/
+@media (min-width: 1201px) and (max-width: 1921px){
 	body.ng-scope{
 		color: #000000;
+		background-color: #8a91a8;
+		background-size: cover;
+		background-position: 14px, -215px;
 	}
+
+	/*body.app{
+		background-image:url(../home/paper.jpg);
+		background-size: cover;
+		background-position: 0px, -200px;
+	}*/
 
 	.top{
 		border-top: solid 12px #000000;
@@ -11,6 +20,20 @@
 		margin-top: 50px;
 		margin-bottom: 30px;
 	}
+
+	header{
+		background-image: url(../header/header.jpg);
+		background-size: cover;
+	}
+
+	.job{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		
+		background-color: rgba(254,254,254,0.4);
+		margin-right: 15px;
+	}	
 
 	.hdln{
 		text-align: center;	
@@ -120,8 +143,8 @@
 		margin-right: auto;
 		margin-left: auto;
 		margin-bottom: 30px;
-		width: 1170px;
-		height: 600px;
+		width: 100%;
+		height: 578px;
 		margin-top: 30px;
 		border-top: solid 12px #000000;
 		border-bottom: solid 12px #000000;
@@ -144,7 +167,7 @@
 	img{
 		padding-left: 4px;
 		padding-right: 4px;
-		padding-top: 12px;
+		padding-top: 0px;
 		padding-bottom: 0;
 		border: solid 20px #000000;
 		border-radius: 26px;
@@ -228,11 +251,13 @@
 		width: 100%;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		background-color: #ffffff;
 	}
 
 	.paperCut{
 		height: 440px;
 		overflow: scroll;
+		background-color: #ffffff;
 	}
 
 	.infoArea{
@@ -271,21 +296,26 @@
 	}
 
 	.lgStory{
-		float: left;
-		padding-left: 110px;
+		float: none;
+		padding-left: 0px;
 		width: 50%;
 	}
 
 	.hLine{
-		padding-right: 100px;
-		padding-left: 20px;
+		padding-right: 50px;
+		padding-left: 30px;
 		font-size: 26px;
 		letter-spacing: 2px;
 		font-family: 'Roboto Slab', serif;
 	}
 
-	.textStory{
-		padding-left: 30px;
+	p.textStory.ng-binding{
+		padding-left: 10px;
+		padding-right: 30px;
+	}
+
+	p.ng-binding{
+		max-width: 800px;
 	}
 
 	.thisPhoto{
@@ -410,7 +440,9 @@
 	}
 
 	.photoButtons{
+		color: #ffffff;
 		text-align: center;
+		background-color: #000000;
 	}
 
 	.photoFields{
@@ -439,6 +471,7 @@
 		margin-top: 50px;
 		margin-bottom: 50px;
 		padding-bottom: 30px;
+		background-color: #ffffff;
 		text-align: center;
 		letter-spacing: 2px;
 		border-top: solid 12px #000000;
@@ -450,10 +483,25 @@
 		margin-bottom: 50px;
 	}
 
-	.row{
+	div.row{
 		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
 	}
-/*}*/
+
+	.dbStories{
+		float: none;
+		width: 800px;
+		max-height: 200px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		overflow: scroll;
+	}
+}
 
 
 /* Landscape tablets and medium desktops */
@@ -647,6 +695,10 @@
 		width: 20vw;
 		border-left: solid 12px #000000;
 	}
+
+	.row{
+		margin-right: 0;
+	}
 }
 
 /* Portrait tablets and small desktops */
@@ -683,11 +735,12 @@
 	}
 
 	.employer{
-		float: left;
-		margin-left: -2vw;
-		margin-right: 0;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
 		padding-left: 0;
-		padding-bottom: 2vh;
+		padding-right: 0;
+		padding-bottom: 0;
 	}
 
 	.position{
@@ -827,6 +880,10 @@
 		width: 50vw;
 		margin-left: 12vw;
 		margin-top: 0;
+	}
+
+	.row{
+		margin-right: 0;
 	}
 }
 
@@ -1210,5 +1267,9 @@
 
 	.formShell{
 
+	}
+
+	.row{
+		margin: 0;
 	}
 }
