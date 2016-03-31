@@ -1,157 +1,753 @@
-body{
-	margin: 0px;
+/*mobile first method*/
+
+/* Custom, iPhone Retina Portrait */ 
+@media (min-width : 320px) {
+
+	body.ng-scope{
+		color: #000000;
+		background-color: #8a91a8;
+	}
+
+	.container.ng-scope {
+		width: 100vw;
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	div.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.top {
+		height: 100vh;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+
+	.hdln{
+		text-align: center;
+	}
+
+	header{
+		background-image: url(../header/header.jpg);
+		background-size: cover;
+	}
+
+	.hs {
+	float: none;
 	display: block;
-}
-
-.debug-nav {
-	width: 100%;
-	text-align: center
-}
-
-.top{
-	margin-left: 50%;
-	transform: translate(-50%, 0%);
-	display: inline-block;
-	width: 50%;
-	background-color: #ffffff;
-	border: solid 3px #000000;
-	border-radius: 3px;
-}
-
-.hdln{
-	float: left;
-	width: 100%;
-	height: 100%;
-}
-
-.hs{
-	float: left;
-	display: inline-block;
 	position: relative;
 	width: 75px;
 	height: 75px;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:30px;
+	margin-bottom: 30px;
 	border: solid 4px #000000; 
 	border-radius: 50%;
-	margin-left: 30px;
-	margin-top: 28px;
-	background-image: url(../headshot/hs-1.jpg);
-	background-size: 150%;
-	background-position: -20px;
+	background-image: url(../headshot/ash_01.jpg);
+	background-size: cover;
+	background-position: -16px 0px;
+	}
 
+	.name {
+		float: none;
+		margin-top: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		/*font-size: 50px;*/
+		font-size: 32px;
+		letter-spacing: 4px;
+		font-family: 'Roboto Slab', serif;
+		background-color: rgba(254,254,254,0.4);
+	}
+
+	.job{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: rgba(254,254,254,0.4);
+	}	
+
+	.employer {
+		float: none;
+		padding-left: 0;
+		padding-bottom: 2vh;
+		padding-right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 32px;
+		letter-spacing: 4px;
+		font-family: 'Roboto Slab', serif;
+	}
+
+	.position {
+		padding-left: 0;
+		float: none;
+		margin-left: auto; 
+		margin-right: auto;
+		font-size: 32px;
+		letter-spacing: 4px;
+		font-family: 'Roboto Slab', serif;
+	}
+
+	footer {
+		width: 100%;
+		padding: 0px;
+	}
+
+	.footNav{
+		margin-right: 0;
+		margin-left: 0px;
+		text-align: center;
+		width: 100%;
+		background-color: #000000;
+	}
+
+	footer, button{
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		color: #ffffff;
+		font-size: 16px;
+		letter-spacing: 4px;
+		background-color: #000000;
+		border-style: none;
+	}
+
+	button a {
+		color: #ffffff;
+	}
+
+	.twitter {
+		float: none;
+		margin: auto;
+		height: 100vh;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 40px;
+		padding-right: 40px;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
+	}
+
+	.pages {
+		float: none;
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		height:60vh;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 6px #000000;
+		border-radius: 0;
+		background-image: url(../img/frontPages/story-9.jpg);
+		background-size: cover;
+		background-position: 0% -13vh;
+		background-attachment:;
+		background-repeat: no-repeat;
+	}
+
+	.portfolio {
+		float: none;
+		width: 100%;
+		/*height: 50vh;*/
+		margin-top: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		border-right: none;
+		border-left: none;
+		border-top: solid 6px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
+	}
+
+	.carousel{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.carousel-inner {
+
+	}
+
+	div.carousel.ng-isolate-scope {
+		top: 0;
+		left: 0;
+		transform: translate(0, 0);
+	}
+
+	.text-muted {
+		padding-top: 0;
+		margin-right: 88px;
+	}
+
+	.img-responsive {
+		width: 100%;
+		height: 100%;
+	}
+
+	.carousel-indicator {
+		width: 0;
+		height: 0;
+	}
+
+	img {
+		padding: 4px;
+		border: solid 16px #66757f;
+		border-radius: 20px;
+	}
+
+	.infoArea {
+		height: 68vh;
+	}
+
+	.theFoot {
+		/*position: bottom;*/
+		margin-top: 0;
+	}
+
+	.portBar {
+		text-align: center;
+	}
+
+	div.portBar h4 {
+		font-family:'Roboto Slab', serif;
+		font-size: 30px;
+		letter-spacing: 2px;
+	}
+
+	.lgStory {
+		height: 100vh;
+		width: 100%;
+	}
+
+	.textStory {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.signIn {
+		text-align: center;
+	}
+
+	form {
+		text-align: center;
+		padding: 20px;
+	}
+
+	input.ng-pristine {
+		margin: 10px;
+	}
+
+	input.ng-dirty {
+		margin: 10px;
+	}
+
+	button.ng-binding {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		margin-right: 2px;
+		margin-left: 2px;
+		color: #ffffff;
+	}
+
+	button.logout {
+		color: #ffffff;
+	}
 }
 
-.textBox{
-	height: 100%;
-	width: 100%;
-	text-align: right;
-	margin: 20px;
-}
+/* Extra Small Devices, Phones Landscape */ 
+@media only screen and (min-width : 480px) {
 
-.name{
-	letter-spacing: 3px;
-	margin-right: 50px;
-	margin-top: 30px;
-	position: relative;
-	color: #000000;
-	font-size: 1.2em;
-	font-family:'Roboto Slab', serif;
-	/*text-shadow: 0px 2px 2px #808080;*/
-}
+	body {
+		text-align: center;
+	}
 
-.descriptor{
-	letter-spacing: 2px;
-	margin-right: 50px;
-	margin-top: 30px;
-	color: #000000;
-	font-size: 1.05em;
-	font-family: 'Expletus Sans', cursive;
-	/*text-shadow: 0px 2px 2px #808080;*/
-}
+	.top {
+		height: 100vh;
+		/*text-align: center;*/
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
 
-.twitter-timeline{
-	width: 50%;
-	margin-left: 50%;
-	transform: translate(-50%, 0%);
-}
-
-.portfolioPage{
-	width: 54%;
-	height: 250px;
-	margin-left: 50%;
-	margin-right: auto;
-	transform: translate(-50%, 0%);
-	overflow: hidden;
-}
-
-.pages{
-	position: relative;
-	top: -116px;
-	left: 5px;
-	width: 100%;
-}
-
-.portfolioPhoto{
-	width: 54%;
-	height: 100%;
-	margin-left: 50%;
-	margin-right: auto;
-	transform: translate(-50%, 0%);
-	overflow: hidden;	
-}
-
-.photo{
-	width: 100%;
-}
-
-.fullPageHide{
-	background-image: url(../img/frontPages/STAR_ONT_ON_2015-22-10_A1.jpg);
-	/*background-size: cover;*/
-}
-	/*margin-left: 50%;
-	margin-right: auto;
-	transform: translate(-50%, 0%);
-	width: 100%;
-	height: 55vh;
-	overflow: hidden;*/
-
-
-.fullPage{
-	position: relative;
-	padding: auto;
-	top: -50%;
-	width: 100%;
-}
-
-.largePortfolio{
-	margin-top: 50%;
-	margin-left: 50%;
-	margin-right: auto;
-	transform: translate(-50%, -50%);
-	width: 80vw;
-}
-
-.lrgPhoto{
-	border: solid 10px #000000;
-	border-radius: 10px;
-}
-
-#slider{
-	width: 800px;
-	height: 533px;
-	overflow: hidden; 
-}
-
-#slider .slide{
-	display: block;
-	width: 6000px;
-	height: 533px;
-	margin: 0;
-	padding: 0;
-}
-
-#slider .slide{
+	.hs {
 	float: left;
-	list-style-type: none;
-	width: 800px;
-	height: 533px;
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border: solid 4px #000000; 
+	border-radius: 50%;
+	padding: 0;
+	margin-left: 46px;
+	margin-right: 14px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	background-image: url(../headshot/ash_01.jpg);
+	background-size: cover;
+	background-position: -24px 0px;
+	}
+
+	.name {
+		float: none;
+		margin-top: 56px;
+		margin-right: 46px;
+		margin-left: 0;
+		/*font-size: 36px;
+		letter-spacing: 4px;
+		font-family: 'Roboto Slab', serif;*/
+	}
+
+	.employer {
+		float: none;
+		padding-left: 0;
+		padding-bottom: 0;
+		padding-right: 0;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		/*font-size: 32px;
+		letter-spacing: 4px;
+		font-family: 'Roboto Slab', serif;*/
+	}
+
+	.position {
+		padding-left: 0;
+		float: none;
+		margin-top: 10px;
+		margin-left: auto; 
+		margin-right: auto;
+		/*font-size: 32px;
+		letter-spacing: 4px;
+		font-family: 'Roboto Slab', serif;*/
+	}
+
+	footer {
+		margin-top: 20px;
+	}
+
+	.footNav {
+		color: #ffffff;
+	}
+
+	.twitter {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100vh;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 40px;
+		padding-right: 40px;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
+	}
+
+	.pages {
+		float: none;
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100vh;
+		border-right: none;
+		border-left: none;
+		border-top: solid 12px #000000;
+		border-bottom: solid 6px #000000;
+		border-radius: 0;
+		background-image: url(../img/frontPages/story-9.jpg);
+		background-size: cover;
+		background-position: 0vw -33vh;
+		background-attachment:;
+		background-repeat: no-repeat;
+	}
+
+	.portfolio {
+		float: none;
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100vh;
+		border-right: none;
+		border-left: none;
+		border-top: solid 6px #000000;
+		border-bottom: solid 12px #000000;
+		border-radius: 0;
+		overflow: hidden;
+	}
+
+	.carousel {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	.text-muted {
+		padding-top: 0;
+		margin-right: 88px;
+	}
+
+	img {
+		/*height: 100vh;*/
+		padding: 0px;
+		border: solid 16px #66757f;
+		border-radius: 20px;
+	}
+
+	.img-responsive {
+		width: 100vw;
+		/*height: 100vh;*/
+	}
+
+	.carousel-indicator {
+		width: 0;
+		height: 0;
+	}
+
+	.infoArea {
+		height: 140vh;
+	}
+
+	.lgStory {
+		height: 100%;
+		width: 100%;
+	}
+
+	/*.theFoot {
+		float: bottom;
+	}*/
+}
+
+/* Small Devices, iPad Portrait */
+@media only screen and (min-width : 768px) {
+
+	.top {
+		height: 50vh;
+		margin-bottom: 0px;
+	}
+
+	.hs {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.name {
+		margin-right: 0px;
+		font-size: 54px;
+	}
+
+	.position {
+		font-size: 40px;
+	}
+
+	.employer {
+		font-size: 40px;
+	}
+
+	.twitter {
+		height: 50vh;
+	}
+
+	.pages {
+		height: 50vh;
+		background-position: 0vw -14vh;
+	}
+
+	.portfolio {
+		height: 50vh;
+		margin-top: 0px;
+	}
+
+	footer, button {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	.infoArea {
+		height: 80vh;
+	}
+
+	/*h4.portType {
+		font-size: 48px;
+		letter-spacing: 4px;
+		font-family: 'Roboto Slab', serif;
+	}
+*/
+	div.portBar h4 {
+		font-size: 50px;
+	}
+
+	p.textStory {
+		padding-top: 10px;
+		padding-left: 50px;
+		padding-right: 50px;
+		font-size: 24px;
+	}
+
+	.infoArea p {
+		padding-top: 590px;
+		padding-left: 50px;
+		padding-right: 50px;
+		font-size: 24px;
+	}
+}
+
+/* Medium Devices, Tablets landscape */
+@media only screen and (min-width : 992px) {
+
+	.container.ng-scope {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.carousel-inner {
+		margin-top: 30px;
+	}
+
+	.name {
+		margin-top: 0px;
+		font-size: 40px;
+		/*background-color: rgba(254,254,254,0.4);*/
+	}
+
+	.position {
+		font-size: 32px;
+	}
+
+	.employer {
+		font-size: 32px;
+	}
+
+	.twitter {
+		float: left;
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		height: 50vh;
+		width: 48vw;
+	}
+
+	.pages {
+		float: right;
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		height: 50vh;
+		width: 48vw;
+		margin-top: 0px;
+		background-position: 0vw -12vh;
+	}
+
+	.portfolio {
+		margin-top: 16px;
+		height: 100vh;
+	}
+
+	img.ng-scope {
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.infoArea {
+		height: 20vh;
+	}
+
+	p {
+		padding-top: 20px;
+		padding-left: 80px;
+		padding-right: 80px;
+		font-size: 20px;
+	}
+}
+
+/* Large Devices, Wide Screens, retina iPad portrait */
+@media only screen and (min-width : 1199px) {
+
+	.top {
+		margin-bottom: 16px;
+	}
+
+	.name {
+		font-size: 80px;
+	}
+
+	.position {
+		font-size: 40px;
+	}
+
+	.employer {
+		font-size: 40px;
+	}
+
+	.infoArea {
+		height: 30vh;
+	}
+}
+
+/*HD televisions*/
+@media only screen and (min-width : 1919px) {
+
+	.hs {
+		width: 140px;
+		height: 140px;
+	}
+
+	.portBar {
+		margin-top: 36px;
+	}
+
+	p {
+		font-size: 46px;
+		padding-left: 300px;
+		padding-right: 300px;
+		padding-top: 40px;
+	}
+
+	footer, button {
+		font-size: 30px;
+	}
+}
+
+/*retina iPad landscape*/
+@media only screen and (min-width: 2047px) {
+
+	.top {
+		border-top: solid 24px #000000;
+		border-bottom: solid 24px #000000;
+	}
+
+	.hs {
+		width: 200px;
+		height: 200px;
+		border: solid 6px #000000; 
+	}
+
+	.name {
+		font-size: 160px;
+	}
+
+	.position {
+		font-size: 80px;
+	}
+
+	.employer {
+		font-size: 80px;
+	}
+
+	footer, button {
+		font-size: 50px;
+	}
+
+	.twitter {
+		border-top: solid 24px #000000;
+		border-bottom: solid 24px #000000;
+	}
+
+	.pages {
+		border-top: solid 24px #000000;
+		border-bottom: solid 24px #000000;
+	}
+
+	.portfolio {
+		border-top: solid 24px #000000;
+		border-bottom: solid 24px #000000;
+	}
+
+	.portBar {
+		margin-top: 34px;
+	}
+
+	h4.portType {
+		font-size: 150px;
+		letter-spacing: 8px; 
+	}
+
+	p {
+		font-size: 48px;
+		padding-left: 140px;
+		padding-right: 140px;
+		padding-top: 140px;
+	}
+}
+
+/*retina MacBookPro 13 inch*/
+@media only screen and (min-width: 2559px) {
+
+	.portBar {
+		margin-top: 44px;
+	}
+
+	h4.portType {
+		font-size: 160px;
+		letter-spacing: 8px; 
+	}
+
+	p {
+		font-size: 48px;
+		padding-left: 340px;
+		padding-right: 340px;
+		padding-top: 140px;
+	}
+}
+
+/*retina iPad Pro 12.9 inch*/
+@media only screen and (min-width: 2731px) {
+
+	footer, button {
+		font-size: 66px;
+	}
+
+	.portBar {
+		margin-top: 160px;
+	}
+
+	h4.portType {
+		font-size: 180px;
+		letter-spacing: 10px; 
+	}
+
+	p {
+		font-size: 68px; 
+		padding-left: 340px;
+		padding-right: 340px;
+		padding-top: 220px;
+	}
+
+	footer.theFoot.ng-scope {
+
+	}
+}
+
+/*retina MacBookPro 15 inch*/
+@media only screen and (min-width: 2879px) {
+
+	.portBar {
+		margin-top: 70px;
+	}
+
+	h4.portType {
+		font-size: 180px;
+		letter-spacing: 12px; 
+	}
 }
